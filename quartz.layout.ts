@@ -38,9 +38,16 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   right: [
     Component.MobileOnly(Component.RecentNotes({
-      limit: 10,
+      limit: 5,
     })),
-    Component.Graph(),
+    Component.Graph({
+      localGraph: {
+        showTags: false,
+      },
+      globalGraph: {
+        showTags: false,
+      }
+    }),
     Component.Backlinks(),
   ],
 }
@@ -62,7 +69,14 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.RecentNotes({
       limit: 10,
     })),
-    Component.Graph(),
+    Component.Graph({
+      localGraph: {
+        showTags: false,
+      },
+      globalGraph: {
+        showTags: false,
+      }
+    }),
     Component.Backlinks(),
   ],
 }
