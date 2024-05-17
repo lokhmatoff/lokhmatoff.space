@@ -29,6 +29,10 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
+      if (fileData.frontmatter?.uid) {
+        segments.push(`UID: ${fileData.frontmatter?.uid}`)
+      }
+
       if (fileData.dates) {
         segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale))
       }
