@@ -17,6 +17,7 @@ tags:
 - [[mermaid|00 Mermaid]]
 - [[docker|00 Docker]]
 - [[literature|00 Литературные заметки]]
+- [[tags|Теги]]
 
 ## Витрина
 
