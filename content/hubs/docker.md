@@ -10,7 +10,7 @@ date: 2024-05-02
 uid: 240502-1647
 draft: false
 tags:
-  - z/hub
+  - hub
   - docker
 ---
 

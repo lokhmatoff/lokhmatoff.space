@@ -7,7 +7,7 @@ aliases:
 date: 2024-05-02
 uid: 240502-1252
 tags:
-  - z/literature
+  - literature
 ---
 
 > [!info] Информация

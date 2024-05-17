@@ -7,7 +7,7 @@ aliases:
 date: 2024-04-30
 uid: 240430-1459
 tags:
-  - z/permanent
+  - permanent
   - mermaid
 ---
 

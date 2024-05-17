@@ -7,7 +7,7 @@ aliases:
 date: 2024-05-02
 uid: 240502-1705
 tags:
-  - z/permanent
+  - permanent
   - docker
 ---
 

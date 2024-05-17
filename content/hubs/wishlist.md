@@ -12,7 +12,7 @@ date: 2024-05-02
 uid: 240502-1519
 draft: false
 tags:
-  - z/hub
+  - hub
   - wishlist
 ---
 

@@ -7,7 +7,7 @@ date: 2024-05-02
 uid: 240502-2026
 draft: false
 tags:
-  - z/permanent
+  - permanent
   - wishlist
 ---
 
