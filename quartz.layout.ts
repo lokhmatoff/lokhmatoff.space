@@ -72,9 +72,15 @@ export const defaultListPageLayout: PageLayout = {
     Component.Graph({
       localGraph: {
         showTags: false,
+        centerForce: 0.9,
+        repelForce: 20,
+        linkDistance: 30,
       },
       globalGraph: {
         showTags: false,
+        centerForce: 0.9,
+        repelForce: 20,
+        linkDistance: 30,
       }
     }),
     Component.Backlinks(),
