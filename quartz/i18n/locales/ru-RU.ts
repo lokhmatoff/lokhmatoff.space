@@ -33,7 +33,7 @@ export default {
       title: "Проводник",
     },
     footer: {
-      createdWith: "Создано с помощью",
+      createdWith: "Картотека заполняется в Obsidian и собирается с помощью",
     },
     graph: {
       title: "Вид графа",
