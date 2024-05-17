@@ -2,9 +2,9 @@
 @use "sass:color";
 
 .callout {
-  border: 1px solid var(--border);
+  border: 2px dashed var(--border);
   background-color: var(--bg);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 0 1rem;
   overflow-y: hidden;
   transition: max-height 0.3s ease;
@@ -30,24 +30,24 @@
   --callout-icon-fold: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E');
 
   &[data-callout] {
-    --color: #448aff;
-    --border: #448aff44;
-    --bg: #448aff10;
+    --color: #458588;
+    --border: #458588;
+    --bg: #4585880a;
     --callout-icon: var(--callout-icon-note);
   }
 
   &[data-callout="abstract"] {
-    --color: #00b0ff;
-    --border: #00b0ff44;
-    --bg: #00b0ff10;
+    --color: #458588;
+    --border: #458588;
+    --bg: #4585880a;
     --callout-icon: var(--callout-icon-abstract);
   }
 
   &[data-callout="info"],
   &[data-callout="todo"] {
-    --color: #00b8d4;
-    --border: #00b8d444;
-    --bg: #00b8d410;
+    --color: #458588;
+    --border: #458588;
+    --bg: #4585880a;
     --callout-icon: var(--callout-icon-info);
   }
 
@@ -56,39 +56,39 @@
   }
 
   &[data-callout="tip"] {
-    --color: #00bfa5;
-    --border: #00bfa544;
-    --bg: #00bfa510;
+    --color: #689d6a;
+    --border: #689d6a;
+    --bg: #689d6a0a;
     --callout-icon: var(--callout-icon-tip);
   }
 
   &[data-callout="success"] {
-    --color: #09ad7a;
-    --border: #09ad7144;
-    --bg: #09ad7110;
+    --color: #98971a;
+    --border: #98971a;
+    --bg: #98971a0a;
     --callout-icon: var(--callout-icon-success);
   }
 
   &[data-callout="question"] {
-    --color: #dba642;
-    --border: #dba64244;
-    --bg: #dba64210;
+    --color: #d79921;
+    --border: #d79921;
+    --bg: #d799210a;
     --callout-icon: var(--callout-icon-question);
   }
 
   &[data-callout="warning"] {
-    --color: #db8942;
-    --border: #db894244;
-    --bg: #db894210;
+    --color: #d65d0e;
+    --border: #d65d0e;
+    --bg: #d65d0e0a;
     --callout-icon: var(--callout-icon-warning);
   }
 
   &[data-callout="failure"],
   &[data-callout="danger"],
   &[data-callout="bug"] {
-    --color: #db4242;
-    --border: #db424244;
-    --bg: #db424210;
+    --color: #cc241d;
+    --border: #cc241d;
+    --bg: #cc241d0a;
     --callout-icon: var(--callout-icon-failure);
   }
 
@@ -101,15 +101,16 @@
   }
 
   &[data-callout="example"] {
-    --color: #7a43b5;
-    --border: #7a43b544;
-    --bg: #7a43b510;
+    --color: #b16286;
+    --border: #b16286;
+    --bg: #b162860a;
     --callout-icon: var(--callout-icon-example);
   }
 
   &[data-callout="quote"] {
-    --color: var(--secondary);
-    --border: var(--lightgray);
+    --color: #928374;
+    --border: #928374;
+    --bg: #9283740a;
     --callout-icon: var(--callout-icon-quote);
   }
 
