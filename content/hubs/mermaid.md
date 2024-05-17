@@ -22,7 +22,7 @@ tags:
 
 ---
 
-- [[Картотека]]
+- [[index|Картотека]]
 
 [^src]: https://mermaid.js.org/
 [^live]: https://mermaid.live/
