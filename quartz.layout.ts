@@ -32,7 +32,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.PageTitle()),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.DesktopOnly(Component.RecentNotes({
-      limit: 10,
+      limit: 5,
     })),
     // Component.DesktopOnly(Component.Explorer()),
   ],
