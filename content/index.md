@@ -14,9 +14,9 @@ tags:
 
 ## Каталог
 
-- [[mermaid|00 Mermaid]]
-- [[docker|00 Docker]]
-- [[literature|00 Литературные заметки]]
+- [[240502-1428|00 Mermaid]]
+- [[240502-1647|00 Docker]]
+- [[240516-1939|00 Литературные заметки]]
 - [[tags|Теги]]
 
 ## Витрина
@@ -25,7 +25,7 @@ tags:
 
 - ~~Проекты~~ *(WiP)*
 - [[about|Коротко обо мне]]
-- [[wishlist|Список желаний]]
+- [[240502-1519|Список желаний]]
 
 [^dg]: https://jzhao.xyz/posts/networked-thought
 [^zk]: https://zettelkasten.de/overview/
