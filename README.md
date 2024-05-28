@@ -1,18 +1,11 @@
-# Quartz v4
+![banner](./quartz/static/gh_banner.png)
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+# Картотека Lokhmatoff
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+Добро пожаловать в мою публичную веб-картотеку! По своей сути она является репозиторием для моих учебных и рабочих заметок, при ведении которых я стараюсь придерживаться методов цифрового садоводства и Zettelkasten.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+---
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
-
-## Sponsors
-
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+<small>
+Картотека заполняется в <a href="https://obsidian.md" target="_blank">Obsidian</a> и собирается с помощью <a href="https://quartz.jzhao.xyz/" target="_blank">Quartz v4.2.3</a> © 2024
+</small>
