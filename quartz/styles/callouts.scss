@@ -29,24 +29,24 @@
   --callout-icon-fold: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E');
 
   &[data-callout] {
-    --color: #458588;
-    --border: #458588;
-    --bg: #4585880a;
+    --color: #597297;
+    --border: #597297;
+    --bg: #5972970a;
     --callout-icon: var(--callout-icon-note);
   }
 
   &[data-callout="abstract"] {
-    --color: #458588;
-    --border: #458588;
-    --bg: #4585880a;
+    --color: #597297;
+    --border: #597297;
+    --bg: #5972970a;
     --callout-icon: var(--callout-icon-abstract);
   }
 
   &[data-callout="info"],
   &[data-callout="todo"] {
-    --color: #458588;
-    --border: #458588;
-    --bg: #4585880a;
+    --color: #597297;
+    --border: #597297;
+    --bg: #5972970a;
     --callout-icon: var(--callout-icon-info);
   }
 
@@ -55,39 +55,39 @@
   }
 
   &[data-callout="tip"] {
-    --color: #689d6a;
-    --border: #689d6a;
-    --bg: #689d6a0a;
+    --color: #4A7989;
+    --border: #4A7989;
+    --bg: #4A79890a;
     --callout-icon: var(--callout-icon-tip);
   }
 
   &[data-callout="success"] {
-    --color: #98971a;
-    --border: #98971a;
-    --bg: #98971a0a;
+    --color: #5D8B6B;
+    --border: #5D8B6B;
+    --bg: #5D8B6B0a;
     --callout-icon: var(--callout-icon-success);
   }
 
   &[data-callout="question"] {
-    --color: #d79921;
-    --border: #d79921;
-    --bg: #d799210a;
+    --color: #BA8F47;
+    --border: #BA8F47;
+    --bg: #BA8F470a;
     --callout-icon: var(--callout-icon-question);
   }
 
   &[data-callout="warning"] {
-    --color: #d65d0e;
-    --border: #d65d0e;
-    --bg: #d65d0e0a;
+    --color: #AB6049;
+    --border: #AB6049;
+    --bg: #AB60490a;
     --callout-icon: var(--callout-icon-warning);
   }
 
   &[data-callout="failure"],
   &[data-callout="danger"],
   &[data-callout="bug"] {
-    --color: #cc241d;
-    --border: #cc241d;
-    --bg: #cc241d0a;
+    --color: #9E4754;
+    --border: #9E4754;
+    --bg: #9E47540a;
     --callout-icon: var(--callout-icon-failure);
   }
 
@@ -100,16 +100,16 @@
   }
 
   &[data-callout="example"] {
-    --color: #b16286;
-    --border: #b16286;
-    --bg: #b162860a;
+    --color: #7F6287;
+    --border: #7F6287;
+    --bg: #7F62870a;
     --callout-icon: var(--callout-icon-example);
   }
 
   &[data-callout="quote"] {
-    --color: #928374;
-    --border: #928374;
-    --bg: #9283740a;
+    --color: #97A3B3;
+    --border: #97A3B3;
+    --bg: #97A3B30a;
     --callout-icon: var(--callout-icon-quote);
   }
 
