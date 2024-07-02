@@ -8,7 +8,7 @@ export const sharedPageComponents: SharedLayout = {
     Component.MobileOnly(Component.PageTitle()),
     Component.DesktopOnly(Component.Search()),
     Component.DesktopOnly(Component.Spacer()),
-    Component.Darkmode(),
+    // Component.Darkmode(),
   ],
   footer: Component.Footer({
     links: {
