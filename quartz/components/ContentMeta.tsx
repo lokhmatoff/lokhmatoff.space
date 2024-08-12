@@ -28,8 +28,8 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
   function ContentMetadata({ cfg, fileData, displayClass }: QuartzComponentProps) {
     const text = fileData.text
     const noteType: {[key in NoteType]: string} = {
-      'fleeting': '🪶',
-      'literature': '📖',
+      'fleeting': '💡',
+      'literature': '📚',
       'hub': '🗃️',
       'permanent': '🍃',
     };
