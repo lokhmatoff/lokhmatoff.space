@@ -6,7 +6,6 @@ tags:
   - lifeos
 aliases:
   - 2408121413 О daily-заметках
-draft: true
 type: fleeting
 ---
 
