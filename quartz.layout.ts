@@ -33,7 +33,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.TableOfContents()),
     Component.DesktopOnly(Component.RecentNotes({
       limit: 5,
-      title: 'Из свеженького',
+      title: 'Новое на сайте',
     })),
     // Component.DesktopOnly(Component.Explorer()),
   ],
