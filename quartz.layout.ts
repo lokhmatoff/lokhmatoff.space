@@ -17,6 +17,7 @@ export const sharedPageComponents: SharedLayout = {
       YouTube: "https://youtube.com/@lokhmatoff",
     },
   }),
+  afterBody: [],
 }
 
 // components for pages that display a single page (e.g. a single note)

@@ -38,6 +38,7 @@ const config: QuartzConfig = {
           secondary: "#7FB4CA",
           tertiary: "#EB8947",
           highlight: "#111111",
+          textHighlight: "#111111",
           // Rose Pine Dawn
           // light: "#FAF4ED",
           // lightgray: "#F2E9E1",
@@ -67,6 +68,7 @@ const config: QuartzConfig = {
           secondary: "#7FB4CA",
           tertiary: "#EB8947",
           highlight: "#111111",
+          textHighlight: "#111111",
           // Space Gray Theme
           // light: "#20242D",
           // lightgray: "#323642",
