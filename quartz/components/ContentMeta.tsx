@@ -19,31 +19,15 @@ const defaultOptions: ContentMetaOptions = {
   showComma: true,
 }
 
-type NoteType = 'fleeting' | 'literature' | 'hub' | 'permanent';
-
 export default ((opts?: Partial<ContentMetaOptions>) => {
   // Merge options with defaults
   const options: ContentMetaOptions = { ...defaultOptions, ...opts }
 
   function ContentMetadata({ cfg, fileData, displayClass }: QuartzComponentProps) {
     const text = fileData.text
-    const noteType: {[key in NoteType]: string} = {
-      'fleeting': '💡',
-      'literature': '📚',
-      'hub': '🗃️',
-      'permanent': '🍃',
-    };
 
     if (text) {
       const segments: (string | JSX.Element)[] = []
-
-      if (fileData.frontmatter?.type) {
-        segments.push(noteType[fileData.frontmatter?.type as NoteType])
-      }
-
-      if (fileData.frontmatter?.uid) {
-        segments.push(`UID: ${fileData.frontmatter?.uid}`)
-      }
 
       if (fileData.dates) {
         segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale))
