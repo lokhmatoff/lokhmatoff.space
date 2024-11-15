@@ -8,35 +8,35 @@ export default {
   components: {
     callout: {
       note: "Заметка",
-      abstract: "Резюме",
-      info: "Инфо",
+      abstract: "Суммируем",
+      info: "Информация",
       todo: "Сделать",
       tip: "Подсказка",
-      success: "Успех",
+      success: "Мы великолепны!",
       question: "Вопрос",
       warning: "Предупреждение",
-      failure: "Неудача",
-      danger: "Опасность",
+      failure: "Ошибка",
+      danger: "Осторожно!",
       bug: "Баг",
       example: "Пример",
       quote: "Цитата",
     },
     backlinks: {
-      title: "Обратные ссылки",
-      noBacklinksFound: "Обратные ссылки отсутствуют",
+      title: "Ссылки на эту страницу",
+      noBacklinksFound: "Ссылки отсутствуют",
     },
     themeToggle: {
-      lightMode: "Светлый режим",
-      darkMode: "Тёмный режим",
+      lightMode: "Светлая тема",
+      darkMode: "Тёмная тема",
     },
     explorer: {
-      title: "Проводник",
+      title: "На этом сайте",
     },
     footer: {
       createdWith: "Создано с помощью",
     },
     graph: {
-      title: "Вид графа",
+      title: "Граф",
     },
     recentNotes: {
       title: "Недавние заметки",
@@ -52,7 +52,7 @@ export default {
       searchBarPlaceholder: "Найти что-нибудь",
     },
     tableOfContents: {
-      title: "Оглавление",
+      title: "На этой странице",
     },
     contentMeta: {
       readingTime: ({ minutes }) => `время чтения ~${minutes} мин.`,
