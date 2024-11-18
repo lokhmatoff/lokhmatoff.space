@@ -30,28 +30,36 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.DesktopOnly(Component.RecentNotes({
-      limit: 5,
-      title: 'Новое на сайте',
-    })),
-    // Component.DesktopOnly(Component.Explorer()),
+    Component.TableOfContents(),
   ],
   right: [
     Component.Backlinks(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.RecentNotes({
+      limit: 5,
+      title: 'Новое на сайте',
+    }),
   ],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
+  beforeBody: [
+    Component.Breadcrumbs(),
+    Component.ArticleTitle(),
+    Component.ContentMeta(),
+  ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.TableOfContents(),
   ],
-  right: [],
+  right: [
+    Component.Backlinks(),
+    Component.RecentNotes({
+      limit: 5,
+      title: 'Новое на сайте',
+    }),
+  ],
 }

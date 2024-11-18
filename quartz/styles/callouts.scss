@@ -2,8 +2,7 @@
 @use "sass:color";
 
 .callout {
-  border: 1px solid var(--border);
-  background-color: var(--bg);
+  border: 2px dashed var(--border);
   border-radius: 5px;
   padding: 0 1rem;
   overflow-y: hidden;
@@ -30,24 +29,24 @@
   --callout-icon-fold: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E');
 
   &[data-callout] {
-    --color: #81A1C1;
-    --border: #81A1C1;
-    --bg: #81A1C109;
+    --color: #6B8FB3;
+    --border: #6B8FB3;
+    --bg: #6B8FB309;
     --callout-icon: var(--callout-icon-note);
   }
 
   &[data-callout="abstract"] {
-    --color: #88C0D0;
-    --border: #88C0D0;
-    --bg: #88C0D009;
+    --color: #6CB2C6;
+    --border: #6CB2C6;
+    --bg: #6CB2C609;
     --callout-icon: var(--callout-icon-abstract);
   }
 
   &[data-callout="info"],
   &[data-callout="todo"] {
-    --color: #81A1C1;
-    --border: #81A1C1;
-    --bg: #81A1C109;
+    --color: #6B8FB3;
+    --border: #6B8FB3;
+    --bg: #6B8FB309;
     --callout-icon: var(--callout-icon-info);
   }
 
@@ -56,23 +55,23 @@
   }
 
   &[data-callout="tip"] {
-    --color: #88C0D0;
-    --border: #88C0D0;
-    --bg: #88C0D009;
+    --color: #6CB2C6;
+    --border: #6CB2C6;
+    --bg: #6CB2C609;
     --callout-icon: var(--callout-icon-tip);
   }
 
   &[data-callout="success"] {
-    --color: #A3BE8C;
-    --border: #A3BE8C;
-    --bg: #A3BE8C09;
+    --color: #81AC5D;
+    --border: #81AC5D;
+    --bg: #81AC5D09;
     --callout-icon: var(--callout-icon-success);
   }
 
   &[data-callout="question"] {
-    --color: #EBCB8B;
-    --border: #EBCB8B;
-    --bg: #EBCB8B09;
+    --color: #D7A747;
+    --border: #D7A747;
+    --bg: #D7A74709;
     --callout-icon: var(--callout-icon-question);
   }
 
@@ -86,9 +85,9 @@
   &[data-callout="failure"],
   &[data-callout="danger"],
   &[data-callout="bug"] {
-    --color: #BF616A;
-    --border: #BF616A;
-    --bg: #BF616A09;
+    --color: #B36B72;
+    --border: #B36B72;
+    --bg: #B36B7209;
     --callout-icon: var(--callout-icon-failure);
   }
 
@@ -101,9 +100,9 @@
   }
 
   &[data-callout="example"] {
-    --color: #B48EAD;
-    --border: #B48EAD;
-    --bg: #B48EAD09;
+    --color: #AE84A6;
+    --border: #AE84A6;
+    --bg: #AE84A609;
     --callout-icon: var(--callout-icon-example);
   }
 
