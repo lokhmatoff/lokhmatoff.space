@@ -3,13 +3,13 @@
 
 .callout {
   border: 2px dashed var(--border);
-  border-radius: 8px;
+  border-radius: 5px;
   padding: 0 1rem;
   overflow-y: hidden;
   transition: max-height 0.3s ease;
   box-sizing: border-box;
 
-  & > *:nth-child(2) {
+  & > .callout-content > :first-child {
     margin-top: 0;
   }
 
@@ -29,24 +29,24 @@
   --callout-icon-fold: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E');
 
   &[data-callout] {
-    --color: #7FB4CA;
-    --border: #7FB4CA;
-    --bg: #7FB4CA0a;
+    --color: #6B8FB3;
+    --border: #6B8FB3;
+    --bg: #6B8FB309;
     --callout-icon: var(--callout-icon-note);
   }
 
   &[data-callout="abstract"] {
-    --color: #7FB4CA;
-    --border: #7FB4CA;
-    --bg: #7FB4CA0a;
+    --color: #6CB2C6;
+    --border: #6CB2C6;
+    --bg: #6CB2C609;
     --callout-icon: var(--callout-icon-abstract);
   }
 
   &[data-callout="info"],
   &[data-callout="todo"] {
-    --color: #7FB4CA;
-    --border: #7FB4CA;
-    --bg: #7FB4CA0a;
+    --color: #6B8FB3;
+    --border: #6B8FB3;
+    --bg: #6B8FB309;
     --callout-icon: var(--callout-icon-info);
   }
 
@@ -55,39 +55,39 @@
   }
 
   &[data-callout="tip"] {
-    --color: #A3D4D5;
-    --border: #A3D4D5;
-    --bg: #A3D4D50a;
+    --color: #6CB2C6;
+    --border: #6CB2C6;
+    --bg: #6CB2C609;
     --callout-icon: var(--callout-icon-tip);
   }
 
   &[data-callout="success"] {
-    --color: #98BB6C;
-    --border: #98BB6C;
-    --bg: #98BB6C0a;
+    --color: #81AC5D;
+    --border: #81AC5D;
+    --bg: #81AC5D09;
     --callout-icon: var(--callout-icon-success);
   }
 
   &[data-callout="question"] {
-    --color: #E6C384;
-    --border: #E6C384;
-    --bg: #E6C3840a;
+    --color: #D7A747;
+    --border: #D7A747;
+    --bg: #D7A74709;
     --callout-icon: var(--callout-icon-question);
   }
 
   &[data-callout="warning"] {
-    --color: #EB8947;
-    --border: #EB8947;
-    --bg: #EB89470a;
+    --color: #CA8268;
+    --border: #CA8268;
+    --bg: #CA826809;
     --callout-icon: var(--callout-icon-warning);
   }
 
   &[data-callout="failure"],
   &[data-callout="danger"],
   &[data-callout="bug"] {
-    --color: #FF5D62;
-    --border: #FF5D62;
-    --bg: #FF5D620a;
+    --color: #B36B72;
+    --border: #B36B72;
+    --bg: #B36B7209;
     --callout-icon: var(--callout-icon-failure);
   }
 
@@ -100,16 +100,15 @@
   }
 
   &[data-callout="example"] {
-    --color: #D27E99;
-    --border: #D27E99;
-    --bg: #D27E990a;
+    --color: #AE84A6;
+    --border: #AE84A6;
+    --bg: #AE84A609;
     --callout-icon: var(--callout-icon-example);
   }
 
   &[data-callout="quote"] {
-    --color: #999999;
-    --border: #999999;
-    --bg: #9999990a;
+    --color: var(--gray);
+    --border: var(--gray);
     --callout-icon: var(--callout-icon-quote);
   }
 
