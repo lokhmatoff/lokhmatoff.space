@@ -28,6 +28,7 @@ aliases:
 
 ### Учусь публично
 
+- [ ] [[cursor-workflow/index|Настройка удобного Workflow в Cursor IDE]]
 - [ ] [[Партиционирование таблиц в PostgreSQL]]
 
 ### Другое
