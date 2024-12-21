@@ -19,9 +19,10 @@ export const sharedPageComponents: SharedLayout = {
   ],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/lokhmatoff",
-      Telegram: "https://t.me/lokhmatoff",
-      "Паблик VK": "https://vk.com/lokhmatoffgames",
+      "Обо мне": "/about",
+      "Блог": "/blog/",
+      "Вишлист": "/wishlist/",
+      "Теги": "/tags/",
     },
   }),
 }
@@ -46,11 +47,6 @@ export const defaultContentPageLayout: PageLayout = {
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
-    Component.Breadcrumbs({
-      spacerSymbol: '/',
-      showCurrentPage: false,
-      rootName: 'Главная',
-    }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
