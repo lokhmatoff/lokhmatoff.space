@@ -62,7 +62,7 @@ export default {
     rss: {
       recentNotes: "Недавние заметки",
       lastFewNotes: ({ count }) =>
-        `Последн${getForm(count, "яя", "ие", "ие")} ${count} замет${getForm(count, "ка", "ки", "ок")}`,
+        `Последн${getForm(count, "яя", "ие", "ие")} ${count} замет${getForm(count, "ка", "ки", "ок")} на`,
     },
     error: {
       title: "Страница не найдена",
