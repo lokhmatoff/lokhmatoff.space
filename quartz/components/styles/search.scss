@@ -3,9 +3,9 @@
 .search {
   min-width: fit-content;
   max-width: 14rem;
-  @media all and ($mobile) {
-    flex-grow: 0.3;
-  }
+  // @media all and ($mobile) {
+  //   flex-grow: 0.3;
+  // }
 
   & > .search-button {
     background-color: var(--lightgray);
@@ -25,7 +25,8 @@
 
     & > p {
       display: inline;
-      padding: 0 1rem;
+      padding: 0 0.5rem 0 0;
+      color: var(--gray);
     }
 
     & svg {

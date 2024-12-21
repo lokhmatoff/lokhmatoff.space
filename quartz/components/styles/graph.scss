@@ -1,6 +1,8 @@
 @use "../../styles/variables.scss" as *;
 
 .graph {
+  margin-bottom: 2rem;
+
   & > h3 {
     font-size: 1rem;
     margin: 0;

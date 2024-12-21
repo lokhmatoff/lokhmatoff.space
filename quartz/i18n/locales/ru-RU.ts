@@ -22,8 +22,8 @@ export default {
       quote: "Цитата",
     },
     backlinks: {
-      title: "Ссылки на эту страницу",
-      noBacklinksFound: "Ссылки отсутствуют",
+      title: "Обратные ссылки",
+      noBacklinksFound: "Ссылок нет",
     },
     themeToggle: {
       lightMode: "Светлая тема",
@@ -48,14 +48,14 @@ export default {
       linkToOriginal: "Ссылка на оригинал",
     },
     search: {
-      title: "Поиск",
+      title: "Ctrl (Cmd) + K",
       searchBarPlaceholder: "Найти что-нибудь",
     },
     tableOfContents: {
       title: "На этой странице",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `время чтения ~${minutes} мин.`,
+      readingTime: ({ minutes }) => `Читать ~${minutes} мин.`,
     },
   },
   pages: {
@@ -66,18 +66,18 @@ export default {
     },
     error: {
       title: "Страница не найдена",
-      notFound: "Эта страница приватная или не существует",
+      notFound: "Эта страница закрыта или не существует",
       home: "Вернуться на главную страницу",
     },
     folderContent: {
       folder: "Папка",
       itemsUnderFolder: ({ count }) =>
-        `в этой папке ${count} элемент${getForm(count, "", "а", "ов")}`,
+        `в этой папке ${count} заме${getForm(count, "тка", "тки", "ток")}`,
     },
     tagContent: {
       tag: "Тег",
-      tagIndex: "Индекс тегов",
-      itemsUnderTag: ({ count }) => `с этим тегом ${count} элемент${getForm(count, "", "а", "ов")}`,
+      tagIndex: "Теги",
+      itemsUnderTag: ({ count }) => `с этим тегом ${count} заме${getForm(count, "тка", "тки", "ток")}`,
       showingFirst: ({ count }) =>
         `Показыва${getForm(count, "ется", "ются", "ются")} ${count} тег${getForm(count, "", "а", "ов")}`,
       totalTags: ({ count }) => `Всего ${count} тег${getForm(count, "", "а", "ов")}`,

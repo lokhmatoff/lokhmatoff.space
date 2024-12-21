@@ -1,4 +1,3 @@
-import { formatDate, getDate } from "./Date"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import readingTime from "reading-time"
 import { classNames } from "../util/lang"
@@ -29,8 +28,8 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
-      if (fileData.dates) {
-        segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale))
+      if (fileData.frontmatter?.uid) {
+        segments.push(`UID: ${fileData.frontmatter?.uid}`)
       }
 
       // Display reading time if enabled

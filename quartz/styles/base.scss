@@ -16,6 +16,7 @@ section {
   background-color: var(--light);
   font-family: var(--bodyFont);
   color: var(--darkgray);
+  letter-spacing: -0.02rem;
 }
 
 .text-highlight {
@@ -320,8 +321,8 @@ h5,
 h6,
 thead {
   font-family: var(--headerFont);
+  font-weight: $semiBoldWeight;
   color: var(--dark);
-  font-weight: revert;
   margin-bottom: 0;
 
   article > & > a[role="anchor"] {
