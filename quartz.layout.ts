@@ -19,10 +19,9 @@ export const sharedPageComponents: SharedLayout = {
   ],
   footer: Component.Footer({
     links: {
-      "Обо мне": "/about",
-      "Блог": "/blog/",
-      "Вишлист": "/wishlist/",
-      "Теги": "/tags/",
+      Repo: 'https://github.com/lokhmatoff/lokhmatoff.space',
+      GitHub: 'https://github.com/lokhmatoff',
+      Telegram: 'https://t.me/lokhmatoff',
     },
   }),
 }
@@ -30,11 +29,11 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
-    Component.Breadcrumbs({
-      spacerSymbol: '/',
-      showCurrentPage: false,
-      rootName: 'Главная',
-    }),
+    // Component.Breadcrumbs({
+    //   spacerSymbol: '/',
+    //   showCurrentPage: false,
+    //   rootName: 'Главная',
+    // }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
