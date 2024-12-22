@@ -4,7 +4,7 @@ uid: 202412091525
 date: 2024-12-09
 tags:
   - cursor
-  - nuisances
+  - nuis
 ---
 
 На странице [о тарифах Cursor](https://www.cursor.com/pricing) для бесплатного плана **Hobby** указано 2000 бесплатных автокомплитов через **Cursor Tab**.
