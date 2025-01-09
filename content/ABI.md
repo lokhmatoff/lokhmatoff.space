@@ -1,6 +1,6 @@
 ---
 uid: 202412181559
-date: 2024-12-18
+date: 2024-12-18T15:59
 aliases:
   - Application Binary Interface
   - АБИ

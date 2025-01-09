@@ -1,7 +1,7 @@
 ---
 description: Это может поломать вывод команд, использующих хелперы Laravel Prompts
 uid: 202408282021
-date: 2024-08-28
+date: 2024-08-28T20:21
 tags:
   - laravel
   - errlog

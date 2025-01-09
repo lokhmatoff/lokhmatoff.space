@@ -2,7 +2,7 @@
 description: Описываем диаграммы представления графа Git в инструменте Mermaid
 aliases:
   - Mermaid Git Graph
-date: 2024-04-30
+date: 2024-04-30T14:59:00
 uid: 202404301459
 tags:
   - git
