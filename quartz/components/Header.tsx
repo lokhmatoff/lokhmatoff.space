@@ -11,7 +11,7 @@ header {
   align-items: center;
   margin: 1.75rem 0 0;
   padding: 0.75rem;
-  border: 2px solid var(--gray);
+  border: 2px solid var(--lightgray);
   border-radius: 1rem;
   gap: 0.75rem;
 }

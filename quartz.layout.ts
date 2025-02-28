@@ -17,8 +17,8 @@ export const sharedPageComponents: SharedLayout = {
     Component.Darkmode(),
   ],
   afterBody: [
-    Component.Graph(),
     Component.Backlinks(),
+    Component.Graph(),
     Component.RecentNotes(),
   ],
   footer: Component.Footer({
