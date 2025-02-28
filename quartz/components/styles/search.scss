@@ -3,9 +3,9 @@
 .search {
   min-width: fit-content;
   max-width: 14rem;
-  // @media all and ($mobile) {
-  //   flex-grow: 0.3;
-  // }
+  @media all and ($mobile) {
+    flex-grow: 0.3;
+  }
 
   & > .search-button {
     background-color: var(--lightgray);
@@ -25,8 +25,7 @@
 
     & > p {
       display: inline;
-      padding: 0 0.5rem 0 0;
-      color: var(--gray);
+      padding: 0 1rem;
     }
 
     & svg {
@@ -107,7 +106,7 @@
           flex: 0 0 min(30%, 450px);
         }
 
-        @media all and not ($tablet) {
+        @media all and not ($mobile) {
           &[data-preview] {
             & .result-card > p.preview {
               display: none;
@@ -133,7 +132,7 @@
           border-radius: 5px;
         }
 
-        @media all and ($tablet) {
+        @media all and ($mobile) {
           & > #preview-container {
             display: none !important;
           }
@@ -152,6 +151,7 @@
         }
 
         & > #preview-container {
+          flex-grow: 1;
           display: block;
           overflow: hidden;
           font-family: inherit;

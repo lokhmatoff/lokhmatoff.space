@@ -8,35 +8,35 @@ export default {
   components: {
     callout: {
       note: "Заметка",
-      abstract: "Суммируем",
-      info: "Информация",
+      abstract: "Резюме",
+      info: "Инфо",
       todo: "Сделать",
       tip: "Подсказка",
-      success: "Мы великолепны!",
+      success: "Успех",
       question: "Вопрос",
       warning: "Предупреждение",
-      failure: "Ошибка",
-      danger: "Осторожно!",
+      failure: "Неудача",
+      danger: "Опасность",
       bug: "Баг",
       example: "Пример",
       quote: "Цитата",
     },
     backlinks: {
       title: "Обратные ссылки",
-      noBacklinksFound: "Ссылок нет",
+      noBacklinksFound: "Обратные ссылки отсутствуют",
     },
     themeToggle: {
-      lightMode: "Светлая тема",
-      darkMode: "Тёмная тема",
+      lightMode: "Светлый режим",
+      darkMode: "Тёмный режим",
     },
     explorer: {
-      title: "На этом сайте",
+      title: "Проводник",
     },
     footer: {
       createdWith: "Создано с помощью",
     },
     graph: {
-      title: "Граф",
+      title: "Вид графа",
     },
     recentNotes: {
       title: "Недавние заметки",
@@ -48,36 +48,36 @@ export default {
       linkToOriginal: "Ссылка на оригинал",
     },
     search: {
-      title: "Ctrl (Cmd) + K",
+      title: "Поиск",
       searchBarPlaceholder: "Найти что-нибудь",
     },
     tableOfContents: {
-      title: "На этой странице",
+      title: "Оглавление",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `Читать ~${minutes} мин.`,
+      readingTime: ({ minutes }) => `время чтения ~${minutes} мин.`,
     },
   },
   pages: {
     rss: {
       recentNotes: "Недавние заметки",
       lastFewNotes: ({ count }) =>
-        `Последн${getForm(count, "яя", "ие", "ие")} ${count} замет${getForm(count, "ка", "ки", "ок")} на`,
+        `Последн${getForm(count, "яя", "ие", "ие")} ${count} замет${getForm(count, "ка", "ки", "ок")}`,
     },
     error: {
       title: "Страница не найдена",
-      notFound: "Эта страница закрыта или не существует",
+      notFound: "Эта страница приватная или не существует",
       home: "Вернуться на главную страницу",
     },
     folderContent: {
       folder: "Папка",
       itemsUnderFolder: ({ count }) =>
-        `в этой папке ${count} заме${getForm(count, "тка", "тки", "ток")}`,
+        `в этой папке ${count} элемент${getForm(count, "", "а", "ов")}`,
     },
     tagContent: {
       tag: "Тег",
-      tagIndex: "Теги",
-      itemsUnderTag: ({ count }) => `с этим тегом ${count} заме${getForm(count, "тка", "тки", "ток")}`,
+      tagIndex: "Индекс тегов",
+      itemsUnderTag: ({ count }) => `с этим тегом ${count} элемент${getForm(count, "", "а", "ов")}`,
       showingFirst: ({ count }) =>
         `Показыва${getForm(count, "ется", "ются", "ются")} ${count} тег${getForm(count, "", "а", "ов")}`,
       totalTags: ({ count }) => `Всего ${count} тег${getForm(count, "", "а", "ов")}`,
