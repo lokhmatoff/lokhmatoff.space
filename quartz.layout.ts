@@ -7,6 +7,13 @@ export const sharedPageComponents: SharedLayout = {
   header: [
     Component.PageTitle(),
     Component.Search(),
+    Component.DesktopOnly(Component.HeaderLinks({
+      links: {
+        "Обо мне": "/about",
+        "Проекты": "/projects",
+        // "Сейчас": "/now",
+      }
+    })),
     Component.Darkmode(),
   ],
   afterBody: [
