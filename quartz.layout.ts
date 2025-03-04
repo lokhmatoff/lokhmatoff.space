@@ -18,13 +18,22 @@ export const sharedPageComponents: SharedLayout = {
   ],
   afterBody: [
     Component.Backlinks(),
-    Component.Graph(),
-    Component.RecentNotes(),
+    Component.Graph({
+      localGraph: {
+        linkDistance: 50,
+      },
+      globalGraph: {
+        repelForce: 5,
+        centerForce: 1,
+        linkDistance: 50,
+      }
+    }),
+    Component.RecentNotes({ limit: 5 }),
   ],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/lokhmatoff",
+      Telegram: "https://t.me/lokhmatoff",
     },
   }),
 }

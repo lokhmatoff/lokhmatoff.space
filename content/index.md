@@ -1,36 +1,21 @@
 ---
-title: индекс
+title: Lokhmatoff Space
 description: Персональное пространство с заметками от lokhmatoff
 date: 2024-04-12T14:00
 aliases:
   - Пространство
   - Веб-блокнот
----
-
-#### Добро пожаловать!
-
-Это моё персональное пространство с заметками. Здесь я стараюсь придерживаться принципов подхода [Zettelkasten](https://zettelkasten.de/), однако также веду ~~на полшишечки~~ блог, храню вишлист и размещаю заметки от своих коллег/друзей.
-
+  - Lokhmatoff Space
 ---
 
 #### Интересно сейчас
 
 - [[tags/laravel|Laravel]]
-- [[tags/ricing|Ricing]]
 - [[tags/cursor|Cursor]]
 
 ---
 
-#### Ещё странички
+#### Разделы
 
-- [[about|Обо мне]]
-- [[blog/index|Блог]]
 - [[wishlist/index|Вишлист]]
 - [[tags/|Теги]]
-
----
-
-#### Work in Progress
-
-- [ ] Агрегация всех ранее созданных ==волтов== [Obsidian](https://obsidian.md)
-- [ ] Страницы формата ==Map of Content (MOC)==

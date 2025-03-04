@@ -23,25 +23,25 @@ export default {
     },
     backlinks: {
       title: "Обратные ссылки",
-      noBacklinksFound: "Обратные ссылки отсутствуют",
+      noBacklinksFound: "Нет обратных ссылок",
     },
     themeToggle: {
-      lightMode: "Светлый режим",
-      darkMode: "Тёмный режим",
+      lightMode: "Светлая тема",
+      darkMode: "Тёмная тема",
     },
     explorer: {
       title: "Проводник",
     },
     footer: {
-      createdWith: "Создано с помощью",
+      createdWith: "Этот сайт создан с помощью",
     },
     graph: {
-      title: "Вид графа",
+      title: "Граф",
     },
     recentNotes: {
-      title: "Недавние заметки",
+      title: "Новое на сайте",
       seeRemainingMore: ({ remaining }) =>
-        `Посмотреть оставш${getForm(remaining, "уюся", "иеся", "иеся")} ${remaining} →`,
+        `К оставш${getForm(remaining, "ейся", "имся", "имся")} ${remaining} →`,
     },
     transcludes: {
       transcludeOf: ({ targetSlug }) => `Переход из ${targetSlug}`,
@@ -55,29 +55,29 @@ export default {
       title: "Оглавление",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `время чтения ~${minutes} мин.`,
+      readingTime: ({ minutes }) => `читать ~${minutes} мин.`,
     },
   },
   pages: {
     rss: {
-      recentNotes: "Недавние заметки",
+      recentNotes: "Новое на сайте",
       lastFewNotes: ({ count }) =>
-        `Последн${getForm(count, "яя", "ие", "ие")} ${count} замет${getForm(count, "ка", "ки", "ок")}`,
+        `Новейш${getForm(count, "ая", "ие", "ие")} ${count} замет${getForm(count, "ка", "ки", "ок")}`,
     },
     error: {
       title: "Страница не найдена",
-      notFound: "Эта страница приватная или не существует",
-      home: "Вернуться на главную страницу",
+      notFound: "Такой страницы нет или она в приватной зоне",
+      home: "Вернуться в индекс",
     },
     folderContent: {
-      folder: "Папка",
+      folder: "Директория",
       itemsUnderFolder: ({ count }) =>
-        `в этой папке ${count} элемент${getForm(count, "", "а", "ов")}`,
+        `содержит ${count} замет${getForm(count, "ку", "ки", "ок")}`,
     },
     tagContent: {
       tag: "Тег",
-      tagIndex: "Индекс тегов",
-      itemsUnderTag: ({ count }) => `с этим тегом ${count} элемент${getForm(count, "", "а", "ов")}`,
+      tagIndex: "Теги",
+      itemsUnderTag: ({ count }) => `${count} замет${getForm(count, "ка", "ки", "ок")} с этим тегом`,
       showingFirst: ({ count }) =>
         `Показыва${getForm(count, "ется", "ются", "ются")} ${count} тег${getForm(count, "", "а", "ов")}`,
       totalTags: ({ count }) => `Всего ${count} тег${getForm(count, "", "а", "ов")}`,
