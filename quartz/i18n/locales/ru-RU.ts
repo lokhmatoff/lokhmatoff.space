@@ -8,76 +8,76 @@ export default {
   components: {
     callout: {
       note: "Заметка",
-      abstract: "Суммируем",
-      info: "Информация",
+      abstract: "Резюме",
+      info: "Инфо",
       todo: "Сделать",
       tip: "Подсказка",
-      success: "Мы великолепны!",
+      success: "Успех",
       question: "Вопрос",
       warning: "Предупреждение",
-      failure: "Ошибка",
-      danger: "Осторожно!",
+      failure: "Неудача",
+      danger: "Опасность",
       bug: "Баг",
       example: "Пример",
       quote: "Цитата",
     },
     backlinks: {
       title: "Обратные ссылки",
-      noBacklinksFound: "Ссылок нет",
+      noBacklinksFound: "Нет обратных ссылок",
     },
     themeToggle: {
       lightMode: "Светлая тема",
       darkMode: "Тёмная тема",
     },
     explorer: {
-      title: "На этом сайте",
+      title: "Проводник",
     },
     footer: {
-      createdWith: "Создано с помощью",
+      createdWith: "Этот сайт создан с помощью",
     },
     graph: {
       title: "Граф",
     },
     recentNotes: {
-      title: "Недавние заметки",
+      title: "Новое на сайте",
       seeRemainingMore: ({ remaining }) =>
-        `Посмотреть оставш${getForm(remaining, "уюся", "иеся", "иеся")} ${remaining} →`,
+        `К оставш${getForm(remaining, "ейся", "имся", "имся")} ${remaining} →`,
     },
     transcludes: {
       transcludeOf: ({ targetSlug }) => `Переход из ${targetSlug}`,
       linkToOriginal: "Ссылка на оригинал",
     },
     search: {
-      title: "Ctrl (Cmd) + K",
+      title: "Поиск",
       searchBarPlaceholder: "Найти что-нибудь",
     },
     tableOfContents: {
-      title: "На этой странице",
+      title: "Оглавление",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `Читать ~${minutes} мин.`,
+      readingTime: ({ minutes }) => `читать ~${minutes} мин.`,
     },
   },
   pages: {
     rss: {
-      recentNotes: "Недавние заметки",
+      recentNotes: "Новое на сайте",
       lastFewNotes: ({ count }) =>
-        `Последн${getForm(count, "яя", "ие", "ие")} ${count} замет${getForm(count, "ка", "ки", "ок")} на`,
+        `Новейш${getForm(count, "ая", "ие", "ие")} ${count} замет${getForm(count, "ка", "ки", "ок")}`,
     },
     error: {
       title: "Страница не найдена",
-      notFound: "Эта страница закрыта или не существует",
-      home: "Вернуться на главную страницу",
+      notFound: "Такой страницы нет или она в приватной зоне",
+      home: "Вернуться в индекс",
     },
     folderContent: {
-      folder: "Папка",
+      folder: "Директория",
       itemsUnderFolder: ({ count }) =>
-        `в этой папке ${count} заме${getForm(count, "тка", "тки", "ток")}`,
+        `содержит ${count} замет${getForm(count, "ку", "ки", "ок")}`,
     },
     tagContent: {
       tag: "Тег",
       tagIndex: "Теги",
-      itemsUnderTag: ({ count }) => `с этим тегом ${count} заме${getForm(count, "тка", "тки", "ток")}`,
+      itemsUnderTag: ({ count }) => `${count} замет${getForm(count, "ка", "ки", "ок")} с этим тегом`,
       showingFirst: ({ count }) =>
         `Показыва${getForm(count, "ется", "ются", "ются")} ${count} тег${getForm(count, "", "а", "ов")}`,
       totalTags: ({ count }) => `Всего ${count} тег${getForm(count, "", "а", "ов")}`,

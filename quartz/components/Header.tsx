@@ -9,7 +9,10 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 2rem 0;
+  margin: 1.75rem 0 0;
+  padding: 0.75rem;
+  border: 2px solid var(--lightgray);
+  border-radius: 1rem;
   gap: 0.75rem;
 }
 

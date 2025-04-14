@@ -6,22 +6,34 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [
     Component.PageTitle(),
-    Component.Spacer(),
     Component.Search(),
+    Component.DesktopOnly(Component.HeaderLinks({
+      links: {
+        "Обо мне": "/about",
+        "Проекты": "/projects",
+        // "Сейчас": "/now",
+      }
+    })),
     Component.Darkmode(),
   ],
   afterBody: [
     Component.Backlinks(),
-    Component.Graph(),
-    Component.RecentNotes({
-      limit: 5,
+    Component.Graph({
+      localGraph: {
+        linkDistance: 50,
+      },
+      globalGraph: {
+        repelForce: 5,
+        centerForce: 1,
+        linkDistance: 50,
+      }
     }),
+    Component.RecentNotes({ limit: 5 }),
   ],
   footer: Component.Footer({
     links: {
-      Repo: 'https://github.com/lokhmatoff/lokhmatoff.space',
-      GitHub: 'https://github.com/lokhmatoff',
-      Telegram: 'https://t.me/lokhmatoff',
+      GitHub: "https://github.com/lokhmatoff",
+      Telegram: "https://t.me/lokhmatoff",
     },
   }),
 }
@@ -29,15 +41,10 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
-    // Component.Breadcrumbs({
-    //   spacerSymbol: '/',
-    //   showCurrentPage: false,
-    //   rootName: 'Главная',
-    // }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
-    Component.TableOfContents(),
+    Component.TableOfContents()
   ],
   left: [],
   right: [],
@@ -45,12 +52,7 @@ export const defaultContentPageLayout: PageLayout = {
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [
-    Component.ArticleTitle(),
-    Component.ContentMeta(),
-    Component.TagList(),
-    Component.TableOfContents(),
-  ],
+  beforeBody: [Component.ArticleTitle(), Component.ContentMeta(), Component.TableOfContents()],
   left: [],
   right: [],
 }
