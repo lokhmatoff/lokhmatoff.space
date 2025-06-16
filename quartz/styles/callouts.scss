@@ -116,10 +116,17 @@
     --callout-icon: var(--callout-icon-example);
   }
 
+  // &[data-callout="quote"] {
+  //   --color: #B74573;
+  //   --border: #B74573;
+  //   --bg: #B7457333;
+  //   --callout-icon: var(--callout-icon-quote);
+  // }
+
   &[data-callout="quote"] {
-    --color: #B74573;
-    --border: #B74573;
-    --bg: #B7457333;
+    --color: #6C7575;
+    --border: #6C7575;
+    --bg: #6C757533;
     --callout-icon: var(--callout-icon-quote);
   }
 
