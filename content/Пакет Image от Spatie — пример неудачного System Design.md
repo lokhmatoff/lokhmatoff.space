@@ -1,11 +1,8 @@
 ---
 uid: 202506092016
 date: 2025-06-09T20:16
-aliases:
-  - обязательность Imagick в spatie/image
-  - spatie/image и расширения imagick и gd
 tags:
-  - systemdesign
+  - system_design
   - php
 ---
 

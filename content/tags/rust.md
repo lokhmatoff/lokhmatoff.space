@@ -16,3 +16,26 @@ date: 2025-01-09T17:39
 Также оставляю свой прогресс по *роадмапу*:
 
 [![roadmap.sh](https://roadmap.sh/card/wide/6498b505d99c9d673195abca?variant=dark&roadmaps=rust)](https://roadmap.sh)
+## Установка
+
+На [[WSL]] или [tags/linux|Linux] или **macOS**:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+## REPL (игровая площадка)
+
+Есть online-песочница — [play.rust-lang.org](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024).
+
+Для оффлайн-изысканий предлагается поставить *crate*:
+
+```bash
+cargo install evcxr_repl
+```
+
+В терминале будет доступна команда `evcxr`:
+
+```bash
+evcxr
+```
