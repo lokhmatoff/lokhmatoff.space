@@ -10,8 +10,9 @@ aliases:
 
 #### Интересно сейчас
 
-- [[tags/laravel|Laravel]]
-- [[tags/cursor|Cursor]]
+- [[Как работают поисковые движки]]
+- [[Pub Sub через Redis]]
+- [[tags/cursor|🔖 Cursor]]
 
 ---
 

@@ -1,11 +1,9 @@
 ---
 title: Валидация Laravel Nova без регистрации
-description: Избавляемся от неприятной плашки в панели
 date: 2024-05-24T15:44
 uid: 202405241544
 tags:
   - laravel
-  - lifehacks
 ---
 
 Лайфхак любезно показан мне ранее моим коллегой Сашей, спасибо ему за ценную информацию! К слову, у него есть свой [канал в Telegram'е](https://t.me/itbomj) 💡
@@ -24,7 +22,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Cache;
 
-class ValidateNovaLicenseCommand extends Command
+final class ValidateNovaLicenseCommand extends Command
 {
     protected $signature = 'app:nova:validate';
     protected $description = 'Validate Nova License online without registration';
