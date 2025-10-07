@@ -10,9 +10,9 @@ aliases:
 
 #### Интересно сейчас
 
-- [[Как работают поисковые движки]]
-- [[Pub Sub через Redis]]
-- [[tags/cursor|🔖 Cursor]]
+- [[tags/omarchy|🐧 Omarchy]]
+- [[tags/neovim|⌨️ NeoVim]]
+- [[tags/laravel|🐘 Laravel]]
 
 ---
 
