@@ -2,21 +2,20 @@
 uid: 202507071812
 date: 2025-07-07T18:12
 tags:
-  - rust
   - cursor
 ---
 
-Мой личный профиль в [[tags/cursor|Cursor IDE]] для разработки на [[tags/rust|Rust]].
+Мой личный профиль в [[tags/cursor|Cursor IDE]] для разработки на [[Rust]].
 
 > [!todo] Ссылка на профиль для **VS Code** / **Cursor**
 
 ## Основные расширения
 
-- [rust-lang.rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) — поддержка языка [[tags/rust|Rust]] в [[tags/vscode|VS Code]] и его форках;
-- [fill-labs.dependi](https://marketplace.visualstudio.com/items?itemName=fill-labs.dependi) — расширение для управления зависимостями в проектах на [[tags/rust|Rust]], [[tags/golang|Go]], **JavaScript**, [[tags/typescript|Typescript]], [[tags/php|PHP]] и **Python**;
+- [rust-lang.rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) — поддержка языка [[Rust]] в [[tags/vscode|VS Code]] и его форках;
+- [fill-labs.dependi](https://marketplace.visualstudio.com/items?itemName=fill-labs.dependi) — расширение для управления зависимостями в проектах на [[Rust]], [[tags/golang|Go]], **JavaScript**, [[tags/typescript|Typescript]], [[tags/php|PHP]] и **Python**;
 - [swellaby.vscode-rust-test-adapter](https://marketplace.visualstudio.com/items?itemName=swellaby.vscode-rust-test-adapter) — инструмент для визуального управления тестами в коде на **Rust**;
 - [tamasfe.even-better-toml](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml) — поддержка языка разметки [[tags/toml|TOML]];
-- [vadimcn.vscode-lldb](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) — дебаггер/визуализатор для **C++** и [[tags/rust|Rust]], работающий на [[LLDB]].
+- [vadimcn.vscode-lldb](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) — дебаггер/визуализатор для **C++** и [[Rust]], работающий на [[LLDB]].
 
 ## Среда и версионирование
 
