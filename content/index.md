@@ -10,7 +10,7 @@ aliases:
 
 #### Интересно сейчас
 
-- [[tags/omarchy|🐧 Omarchy]]
+- [[Omarchy|🐧 Omarchy]]
 - [[tags/neovim|⌨️ NeoVim]]
 - [[tags/laravel|🐘 Laravel]]
 

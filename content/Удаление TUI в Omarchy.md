@@ -34,5 +34,5 @@ rm ~/.local/share/applications/icons/Proxy\ Up.png
 
 ---
 
-- [[tags/omarchy|Omarchy]]
+- [[Omarchy|Omarchy]]
 - [Can't remove TUI App // basecamp/omarchy Issues #1785](https://github.com/basecamp/omarchy/issues/1785)
