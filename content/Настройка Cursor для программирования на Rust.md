@@ -5,7 +5,7 @@ tags:
   - cursor
 ---
 
-Мой личный профиль в [[tags/cursor|Cursor IDE]] для разработки на [[Rust]].
+Мой личный профиль в [[Cursor|Cursor IDE]] для разработки на [[Rust]].
 
 > [!todo] Ссылка на профиль для **VS Code** / **Cursor**
 
@@ -20,7 +20,7 @@ tags:
 ## Среда и версионирование
 
 - [ms-vscode-remote.remote-wsl](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) — работа с проектами в файловой системе [[WSL]] (Windows Subsystems for Linux);
-- [eamodio.gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) — расширение работы с [[tags/git|Git]] в [[tags/vscode|VS Code]] и его форках ([[tags/cursor|Cursor]] в частности);
+- [eamodio.gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) — расширение работы с [[tags/git|Git]] в [[tags/vscode|VS Code]] и его форках ([[Cursor|Cursor]] в частности);
 - [mhutchie.git-graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) — удобный визуальный **Git Graph** репозитория
 
 ## Внешний вид

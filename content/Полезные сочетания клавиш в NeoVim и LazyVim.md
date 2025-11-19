@@ -27,4 +27,4 @@ tags:
 
 ---
 
-- [[tags/neovim|NeoVim]]
+- [[NeoVim|NeoVim]]

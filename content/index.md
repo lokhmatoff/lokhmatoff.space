@@ -11,8 +11,8 @@ aliases:
 #### Интересно сейчас
 
 - [[Omarchy|🐧 Omarchy]]
-- [[tags/neovim|⌨️ NeoVim]]
-- [[tags/laravel|🐘 Laravel]]
+- [[NeoVim|⌨️ NeoVim]]
+- [[Laravel|🐘 Laravel]]
 
 ---
 
