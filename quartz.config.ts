@@ -1,6 +1,7 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
-import { colors } from "./quartz/themes/dracula"
+// import { colors } from "./quartz/themes/dracula"
+import { colors } from "./quartz/themes/nord"
 
 /**
  * Quartz 4.0 Configuration
@@ -48,9 +49,14 @@ const config: QuartzConfig = {
         // },
         // keepBackground: false,
         // Dracula syntax theme
+        // theme: {
+        //   light: "dracula",
+        //   dark: "dracula",
+        // },
+        // keepBackground: true,
         theme: {
-          light: "dracula",
-          dark: "dracula",
+          light: "nord",
+          dark: "nord",
         },
         keepBackground: true,
       }),
