@@ -8,6 +8,7 @@ tags:
   - blog
   - wifi
   - lifehacks
+draft: false
 ---
 ## Введение
 

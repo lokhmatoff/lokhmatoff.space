@@ -4,7 +4,6 @@ date: 2025-09-30T11:22
 draft: false
 tags:
   - linux
-  - omarchy
 ---
 
 > [!success] Пофиксили

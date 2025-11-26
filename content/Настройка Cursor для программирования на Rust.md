@@ -3,6 +3,7 @@ uid: 202507071812
 date: 2025-07-07T18:12
 tags:
   - cursor
+draft: false
 ---
 
 Мой личный профиль в [[Cursor|Cursor IDE]] для разработки на [[Rust]].
