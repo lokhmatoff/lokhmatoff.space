@@ -1,9 +1,6 @@
 ---
 uid: 202506301557
 date: 2025-06-30T15:57
-tags:
-  - javascript
-  - typescript
 draft: false
 ---
 

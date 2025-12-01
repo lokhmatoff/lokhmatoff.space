@@ -6,7 +6,7 @@ date: 2025-09-29T13:17
 draft: false
 ---
 
-Сконфигурированный **Arch Linux** на [[Hyprland]] от создателя Ruby On Rails.
+Сконфигурированный **Arch Linux** на [[Hyprland]] от [[DHH]] — создателя Ruby On Rails.
 
 Официальный сайт дистрибутива: [Omarchy.org](https://omarchy.org)
 
