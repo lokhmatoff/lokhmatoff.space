@@ -1,7 +1,8 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 // import { colors } from "./quartz/themes/dracula"
-import { colors } from "./quartz/themes/nord"
+// import { colors } from "./quartz/themes/nord"
+import { colors } from "./quartz/themes/gruvbox"
 
 /**
  * Quartz 4.0 Configuration
@@ -54,11 +55,18 @@ const config: QuartzConfig = {
         //   dark: "dracula",
         // },
         // keepBackground: true,
+        // Nord syntax theme
+        // theme: {
+        //   light: "nord",
+        //   dark: "nord",
+        // },
+        // keepBackground: true,
+        // Gruvbox syntax theme
         theme: {
-          light: "nord",
-          dark: "nord",
+          light: "everforest-light",
+          dark: "everforest-dark",
         },
-        keepBackground: true,
+        keepBackground: false,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
