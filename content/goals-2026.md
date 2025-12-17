@@ -37,7 +37,7 @@ draft: true
 
 Хочется вынести как можно больше информации из своего 1-го мозга во 2-й — так я разгружу голову для новых знаний и навыков, а также и вопросов!
 
-<progress id="zettelkasten" max="256" value="107"></progress><br><span>107 / 256 (заметок в <a href="https://lokhmatoff.space" target="_self">lokhmatoff.space</a>)</span>
+<progress id="zettelkasten" max="256" value="110"></progress><br><span>110 / 256 (заметок в <a href="https://lokhmatoff.space" target="_self">lokhmatoff.space</a>)</span>
 
 ### 🚀 Реализовать и выпустить 4 pet-проекта
 
