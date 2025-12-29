@@ -10,6 +10,8 @@ aliases:
 
 %% А  ещё  у меня есть [резюме на HH](https://hh.ru/resume/3f3eae12ff031742ff0039ed1f596a5676417a)! %%
 
+> [!hint] **[[goals-2026|Цели на 2026 год]]**
+
 #### Контакты
 
 - **Email:** shaggydmitrydev@gmail.com
