@@ -1,8 +1,8 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 // import { colors } from "./quartz/themes/dracula"
-// import { colors } from "./quartz/themes/nord"
-import { colors } from "./quartz/themes/gruvbox"
+import { colors } from "./quartz/themes/nord"
+// import { colors } from "./quartz/themes/gruvbox"
 
 /**
  * Quartz 4.0 Configuration
