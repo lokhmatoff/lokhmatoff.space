@@ -1,5 +1,6 @@
 ---
 title: Cursor
+uid: 202512221642
 description: Заметки о VSCode-подобном редакторе кода с интегрированной панелью ИИ
 date: 2024-12-22T16:42
 draft: false

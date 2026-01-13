@@ -1,8 +1,6 @@
 ---
 uid: 202507071812
 date: 2025-07-07T18:12
-tags:
-  - cursor
 draft: false
 ---
 
@@ -21,7 +19,7 @@ draft: false
 ## Среда и версионирование
 
 - [ms-vscode-remote.remote-wsl](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) — работа с проектами в файловой системе [[WSL]] (Windows Subsystems for Linux);
-- [eamodio.gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) — расширение работы с [[tags/git|Git]] в [[tags/vscode|VS Code]] и его форках ([[Cursor|Cursor]] в частности);
+- [eamodio.gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) — расширение работы с [[Git]] в [[tags/vscode|VS Code]] и его форках ([[Cursor|Cursor]] в частности);
 - [mhutchie.git-graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) — удобный визуальный **Git Graph** репозитория
 
 ## Внешний вид

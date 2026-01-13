@@ -1,5 +1,6 @@
 ---
 title: Блог
+uid: 202405311310
 date: 2024-05-31T13:10
 draft: false
 aliases:

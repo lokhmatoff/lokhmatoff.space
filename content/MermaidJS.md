@@ -4,6 +4,7 @@ description: Заметки об инструменте для проектир�
 aliases:
   - Mermaid
   - Mermaid.js
+uid: 202405020000
 date: 2024-05-02
 ---
 

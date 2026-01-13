@@ -1,5 +1,6 @@
 ---
 title: Обо мне
+uid: 202505171359
 description: Персональное пространство с заметками от lokhmatoff
 date: 2024-05-17T13:59
 aliases:

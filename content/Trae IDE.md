@@ -1,9 +1,6 @@
 ---
 uid: 202501242000
 date: 2025-01-24T20:00
-tags:
-  - ai
-  - software
 draft: false
 ---
 
