@@ -50,4 +50,5 @@ $slug = $sluggify($title);
 ---
 
 - [[Чего не хватает в PHP]]
+- [[Конвеерный оператор в PHP вызывает ошибку zend_mm_heap corrupted]]
 - [The pipe operator in PHP 8.5](https://stitcher.io/blog/pipe-operator-in-php-85?ref=dailydev)
