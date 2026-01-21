@@ -56,17 +56,17 @@ const config: QuartzConfig = {
         // },
         // keepBackground: true,
         // Nord syntax theme
-        // theme: {
-        //   light: "nord",
-        //   dark: "nord",
-        // },
-        // keepBackground: true,
-        // Gruvbox syntax theme
         theme: {
-          light: "everforest-light",
-          dark: "everforest-dark",
+          light: "nord",
+          dark: "nord",
         },
-        keepBackground: false,
+        keepBackground: true,
+        // Gruvbox syntax theme
+        // theme: {
+        //   light: "everforest-light",
+        //   dark: "everforest-dark",
+        // },
+        // keepBackground: false,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
