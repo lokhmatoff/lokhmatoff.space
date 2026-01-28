@@ -40,11 +40,13 @@ aliases:
 
 Хочется вынести как можно больше информации из своего 1-го мозга во 2-й — так я разгружу голову для новых знаний и навыков, а также и вопросов!
 
-<progress id="zettelkasten" max="256" value="93"></progress><br><span>93 / 256 (публично доступных заметок в <a href="https://lokhmatoff.space" target="_self">lokhmatoff.space</a>)</span>
+<progress id="zettelkasten" max="256" value="95"></progress><br><span>95 / 256 (публично доступных заметок в <a href="https://lokhmatoff.space" target="_self">lokhmatoff.space</a>)</span>
 
 ### 🚀 Реализовать и выпустить 4 pet-проекта
 
 Самое время вернуться к отложенному ящику с написанным кодом, дописать его и дать ему увидеть свет и своих пользователей!
+
+[[projects/index|Проекты]]
 
 <progress id="pet-projects" max="4" value="0"></progress><br><span>0 / 4 (проекты)</span>
 
@@ -82,12 +84,12 @@ aliases:
 Предположительно, я останусь либо на [[Omarchy]], либо на чистом закастомизированном сетапе [[Arch Linux|Arch]] + [[Hyprland]]. Этапы:
 
 - [x] Проанализировать статус и качество гейминга на [[Arch Linux]];
-- [ ] Проанализировать возможность писать и создавать музыку;
+- [x] Проанализировать возможность писать и создавать музыку;
 - [ ] Причесать свой сетап на Arch, довести до совершенства;
 - [x] Бэкапировать данные с Windows;
 - [x] Установить выбранную систему на ПК.
 
-<progress id="linux" max="5" value="3"></progress><br><span>3 / 5 (этапы)</span>
+<progress id="linux" max="5" value="4"></progress><br><span>4 / 5 (этапы)</span>
 
 ### 📚 Прочитать хотя бы 12 книг
 
