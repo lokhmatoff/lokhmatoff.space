@@ -36,11 +36,14 @@ aliases:
 
 <progress id="approved-contributions" max="12" value="0"></progress><br><span>0 / 12 (успешных контрибуций за год)</span>
 
+> [!danger] Кажется, в ближайшем будущем это может быть бесполезно
+> У меня в стране ограничивают моменты, связанные с простотой коммуникации с людьми по всему миру и получением FOSS. Наверное, при дальнейшей невозможности контрибуций в мировые проекты я сфокусируюсь на pet-проектах.
+
 ### 🗃 Масштабировать Lokhmatoff.space до 256 заметок
 
 Хочется вынести как можно больше информации из своего 1-го мозга во 2-й — так я разгружу голову для новых знаний и навыков, а также и вопросов!
 
-<progress id="zettelkasten" max="256" value="96"></progress><br><span>96 / 256 (публично доступных заметок в <a href="https://lokhmatoff.space" target="_self">lokhmatoff.space</a>)</span>
+<progress id="zettelkasten" max="256" value="98"></progress><br><span>98 / 256 (публично доступных заметок в <a href="https://lokhmatoff.space" target="_self">lokhmatoff.space</a>)</span>
 
 ### 🚀 Реализовать и выпустить 4 pet-проекта
 
@@ -49,6 +52,8 @@ aliases:
 [[projects/index|Проекты]]
 
 <progress id="pet-projects" max="4" value="0"></progress><br><span>0 / 4 (проекты)</span>
+
+> [!question] Может, сильнее сфокусироваться на этой цели?
 
 ### 🏇 Достичь необходимого для соревнований уровня в конкуре
 
@@ -97,13 +102,17 @@ aliases:
 
 [[Прочитанные книги]]
 
-<progress id="books" max="12" value="0"></progress><br><span>0 / 12 (книги)</span>
+<progress id="books" max="12" value="1"></progress><br><span>1 / 12 (книги)</span>
 
 ### 👨‍🍳 Научиться готовить хотя бы 10 сложных блюд
 
 Здесь я бы учитывал ещё и разные кухни, и разные техники, и даже разные ингредиенты, поскольку это тоже хорошо тренирует мозг и заодно радует вкусовые сосочки!
 
 <progress id="recipes" max="10" value="0"></progress><br><span>0 / 10 (блюда)</span>
+
+**Рецепты:**
+
+- ... (todo)
 
 ---
 
