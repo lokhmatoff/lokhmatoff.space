@@ -43,7 +43,7 @@ aliases:
 
 Хочется вынести как можно больше информации из своего 1-го мозга во 2-й — так я разгружу голову для новых знаний и навыков, а также и вопросов!
 
-<progress id="zettelkasten" max="256" value="98"></progress><br><span>98 / 256 (публично доступных заметок в <a href="https://lokhmatoff.space" target="_self">lokhmatoff.space</a>)</span>
+<progress id="zettelkasten" max="256" value="101"></progress><br><span>101 / 256 (публично доступных заметок в <a href="https://lokhmatoff.space" target="_self">lokhmatoff.space</a>)</span>
 
 ### 🚀 Реализовать и выпустить 4 pet-проекта
 
@@ -70,7 +70,7 @@ aliases:
 
 Пришло время познакомиться с чем-то ещё, кроме Тайланда :)
 
-<progress id="travel" max="1" value="0"></progress><br><span>0 / 1 (страны)</span>
+<progress id="travel" max="1" value="1"></progress><br><span>1 / 1 (страны)</span>
 
 ### 📹 Возродить YouTube-канал из пепла
 
