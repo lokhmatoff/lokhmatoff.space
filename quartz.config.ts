@@ -1,7 +1,8 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 // import { colors } from "./quartz/themes/dracula"
-import { colors } from "./quartz/themes/nord"
+// import { colors } from "./quartz/themes/nord"
+import { colors } from "./quartz/themes/everforest"
 // import { colors } from "./quartz/themes/gruvbox"
 
 /**
@@ -56,9 +57,15 @@ const config: QuartzConfig = {
         // },
         // keepBackground: true,
         // Nord syntax theme
+        // theme: {
+        //   light: "nord",
+        //   dark: "nord",
+        // },
+        // keepBackground: true,
+        // Everforest syntax theme
         theme: {
-          light: "nord",
-          dark: "nord",
+          light: "everforest-light",
+          dark: "everforest-dark",
         },
         keepBackground: true,
         // Gruvbox syntax theme
