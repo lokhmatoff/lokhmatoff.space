@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-04-25T17:16:24.755Z",
+  "baseUrl": "http://127.0.0.1:8080",
+  "pages": [
+    {
+      "key": "home",
+      "route": "/"
+    },
+    {
+      "key": "tags",
+      "route": "/tags"
+    },
+    {
+      "key": "wishlist",
+      "route": "/wishlist"
+    },
+    {
+      "key": "article",
+      "route": "/MermaidJS"
+    }
+  ],
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 900
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "themes": [
+    "light",
+    "dark"
+  ]
+}
