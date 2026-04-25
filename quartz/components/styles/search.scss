@@ -9,14 +9,13 @@
   flex: 1 0 fit-content;
 
   & > .search-button {
-    background-color: var(--lightgray);
-    border: none;
-    border-radius: 4px;
+    background-color: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
     font-family: inherit;
     font-size: inherit;
     height: 2.5rem;
-    padding: 0;
-    border-radius: 0.75rem;
+    padding: 0 var(--space-2) 0 var(--space-3);
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -25,12 +24,16 @@
     cursor: pointer;
     white-space: nowrap;
     width: 100%;
+    transition:
+      border-color 0.2s ease,
+      background-color 0.2s ease,
+      box-shadow 0.2s ease;
 
     & > p {
       display: inline;
       padding: 0;
       font-weight: 600;
-      color: var(--gray);
+      color: var(--text-muted);
     }
 
     & svg {
@@ -40,10 +43,21 @@
       margin: 0 0.5rem;
 
       .search-path {
-        stroke: var(--darkgray);
+        stroke: var(--text-muted);
         stroke-width: 2px;
-        transition: stroke 0.5s ease;
+        transition: stroke 0.2s ease;
       }
+    }
+
+    &:hover {
+      background-color: color-mix(in srgb, var(--bg-elevated) 75%, var(--accent) 25%);
+      border-color: var(--border-strong);
+    }
+
+    &:focus-visible {
+      border-color: var(--ring);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring) 35%, transparent);
+      outline: none;
     }
   }
 
@@ -57,7 +71,8 @@
     height: 100vh;
     overflow-y: auto;
     display: none;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(6px);
+    background: color-mix(in srgb, var(--bg) 58%, transparent);
 
     &.active {
       display: inline-block;
@@ -75,11 +90,10 @@
 
       & > * {
         width: 100%;
-        border-radius: 7px;
-        background: var(--light);
-        box-shadow:
-          0 14px 50px rgba(27, 33, 48, 0.12),
-          0 10px 30px rgba(27, 33, 48, 0.16);
+        border-radius: var(--radius-md);
+        background: var(--bg);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-md);
         margin-bottom: 2em;
       }
 
@@ -89,17 +103,19 @@
         font-family: var(--bodyFont);
         color: var(--dark);
         font-size: 1.1em;
-        border: 1px solid var(--lightgray);
+        border: 1px solid var(--border);
 
         &:focus {
-          outline: none;
+          outline: 2px solid var(--ring);
+          outline-offset: 2px;
+          border-color: var(--ring);
         }
       }
 
       & > #search-layout {
         display: none;
         flex-direction: row;
-        border: 1px solid var(--lightgray);
+        border: 1px solid var(--border);
         flex: 0 0 100%;
         box-sizing: border-box;
 
@@ -119,7 +135,7 @@
 
             & > div {
               &:first-child {
-                border-right: 1px solid var(--lightgray);
+                border-right: 1px solid var(--border);
                 border-top-right-radius: unset;
                 border-bottom-right-radius: unset;
               }
@@ -134,7 +150,7 @@
 
         & > div {
           height: calc(75vh - 12vh);
-          border-radius: 5px;
+          border-radius: var(--radius-sm);
         }
 
         @media all and ($mobile) {
@@ -184,7 +200,7 @@
             padding: 1em;
             cursor: pointer;
             transition: background 0.2s ease;
-            border-bottom: 1px solid var(--lightgray);
+            border-bottom: 1px solid var(--border);
             width: 100%;
             display: block;
             box-sizing: border-box;
@@ -202,7 +218,7 @@
             &:hover,
             &:focus,
             &.focus {
-              background: var(--lightgray);
+              background: color-mix(in srgb, var(--bg-elevated) 70%, var(--accent) 30%);
             }
 
             & > h3 {

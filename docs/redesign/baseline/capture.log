@@ -6,13 +6,13 @@ npm warn Unknown env config "devdir". This will stop working in the next major v
 
  Quartz v4.4.0 
 
-(node:33468) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:37051) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-Cleaned output directory `public` in 14ms
-Found 128 input files from `content` in 17ms
-[2K[1GParsed 128 Markdown files in 861ms
-Filtered out 27 files in 194μs
-[2K[1GEmitted 186 files to `public` in 288ms
+Cleaned output directory `public` in 13ms
+Found 128 input files from `content` in 16ms
+[2K[1GParsed 128 Markdown files in 911ms
+Filtered out 27 files in 206μs
+[2K[1GEmitted 186 files to `public` in 315ms
 Done processing 128 files in 1s
 Started a Quartz server listening at http://localhost:8080
 hint: exit with ctrl+c
@@ -35,10 +35,6 @@ hint: exit with ctrl+c
 [200] /postscript.js
 [200] /static/contentIndex.json
 [200] /tags/
-[200] /index.css
-[200] /prescript.js
-[200] /postscript.js
-[200] /static/contentIndex.json
 [200] /static/icon.png
 [302] /wishlist -> /wishlist/
 [200] /wishlist/
@@ -47,9 +43,6 @@ hint: exit with ctrl+c
 [200] /postscript.js
 [200] /static/contentIndex.json
 [200] /wishlist/
-[200] /index.css
-[200] /prescript.js
-[200] /postscript.js
 [200] /static/contentIndex.json
 [200] /static/icon.png
 [200] /MermaidJS
@@ -69,6 +62,10 @@ hint: exit with ctrl+c
 [200] /postscript.js
 [200] /static/contentIndex.json
 [200] /
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
 [200] /static/icon.png
 [200] /MermaidJS
 [200] /
@@ -102,11 +99,11 @@ hint: exit with ctrl+c
 [200] /MermaidJS
 [200] /static/icon.png
 [200] /
-[200] /
 [200] /index.css
 [200] /prescript.js
 [200] /postscript.js
 [200] /static/contentIndex.json
+[200] /
 [200] /static/icon.png
 [200] /MermaidJS
 [200] /
@@ -118,38 +115,12 @@ hint: exit with ctrl+c
 [200] /static/icon.png
 [302] /tags -> /tags/
 [200] /tags/
-[200] /index.css
-[200] /prescript.js
-[200] /postscript.js
-[200] /static/contentIndex.json
 [200] /tags/
-[200] /static/icon.png
-[302] /wishlist -> /wishlist/
-[200] /wishlist/
 [200] /index.css
 [200] /prescript.js
 [200] /postscript.js
-[200] /static/contentIndex.json
-[200] /wishlist/
-[200] /MermaidJS
-[200] /MermaidJS
 [200] /static/icon.png
-[200] /
-[200] /index.css
-[200] /prescript.js
-[200] /postscript.js
 [200] /static/contentIndex.json
-[200] /
-[200] /MermaidJS
-[200] /
-[200] /index.css
-[200] /prescript.js
-[200] /postscript.js
-[200] /static/contentIndex.json
-[200] /static/icon.png
-[302] /tags -> /tags/
-[200] /tags/
-[200] /tags/
 [302] /wishlist -> /wishlist/
 [200] /wishlist/
 [200] /index.css
@@ -159,12 +130,38 @@ hint: exit with ctrl+c
 [200] /wishlist/
 [200] /static/icon.png
 [200] /MermaidJS
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
 [200] /MermaidJS
+[200] /static/icon.png
 [200] /
 [200] /index.css
 [200] /prescript.js
 [200] /postscript.js
 [200] /static/contentIndex.json
 [200] /
+[200] /MermaidJS
+[200] /
+[200] /static/icon.png
+[302] /tags -> /tags/
+[200] /tags/
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /tags/
+[302] /wishlist -> /wishlist/
+[200] /wishlist/
+[200] /wishlist/
 [200] /static/icon.png
 [200] /MermaidJS
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /MermaidJS
+[200] /
+[200] /
+[200] /static/icon.png
