@@ -53,6 +53,12 @@
     border-color 0.16s ease,
     color 0.16s ease,
     box-shadow 0.16s ease;
+
+  &:focus-visible {
+    outline: none;
+    border-color: var(--ring);
+    box-shadow: var(--ring-shadow);
+  }
 }
 
 .home-hero-primary {
@@ -73,7 +79,7 @@
 
   &:hover {
     border-color: var(--border-strong);
-    background: color-mix(in srgb, var(--bg-elevated) 70%, var(--accent) 30%);
+    background: var(--surface-hover);
     color: var(--text) !important;
   }
 }

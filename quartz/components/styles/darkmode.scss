@@ -25,14 +25,14 @@
   }
 
   &:hover {
-    background: color-mix(in srgb, var(--bg-elevated) 74%, var(--accent) 26%);
+    background: var(--surface-hover-strong);
     border-color: var(--border-strong);
   }
 
   &:focus-visible {
     outline: none;
     border-color: var(--ring);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring) 35%, transparent);
+    box-shadow: var(--ring-shadow);
   }
 }
 

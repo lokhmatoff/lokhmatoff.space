@@ -27,10 +27,15 @@
       background-color 0.2s ease;
   }
 
-  & a:hover,
-  & a:focus-visible {
-    background: color-mix(in srgb, var(--bg-elevated) 74%, var(--accent) 26%);
+  & a:hover {
+    background: var(--surface-hover-strong);
     border-color: var(--border);
+  }
+
+  & a:focus-visible {
+    background: var(--surface-hover-strong);
+    border-color: var(--ring);
+    box-shadow: var(--ring-shadow);
     outline: none;
   }
 

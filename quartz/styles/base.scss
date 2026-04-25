@@ -87,6 +87,12 @@ a {
     border-radius: var(--radius-sm);
     line-height: 1.4rem;
 
+    &:focus-visible {
+      outline: none;
+      border-color: var(--ring);
+      box-shadow: var(--ring-shadow);
+    }
+
     &:has(> img) {
       background-color: transparent;
       border-radius: 0;

@@ -40,7 +40,7 @@
       &:hover .section,
       &:focus-within .section {
         border-color: var(--border-strong);
-        background: color-mix(in srgb, var(--bg-elevated) 78%, var(--accent) 22%);
+        background: var(--surface-hover);
       }
     }
   }

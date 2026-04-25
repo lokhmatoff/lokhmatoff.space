@@ -50,13 +50,13 @@
     }
 
     &:hover {
-      background-color: color-mix(in srgb, var(--bg-elevated) 75%, var(--accent) 25%);
+      background-color: var(--surface-hover);
       border-color: var(--border-strong);
     }
 
     &:focus-visible {
       border-color: var(--ring);
-      box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring) 35%, transparent);
+      box-shadow: var(--ring-shadow);
       outline: none;
     }
   }
@@ -216,9 +216,9 @@
             font-weight: inherit;
 
             &:hover,
-            &:focus,
+            &:focus-visible,
             &.focus {
-              background: color-mix(in srgb, var(--bg-elevated) 70%, var(--accent) 30%);
+              background: var(--surface-hover);
             }
 
             & > h3 {
