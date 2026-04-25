@@ -14,7 +14,7 @@
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
-    "check": "tsc --noEmit && npx prettier . --check",
+    "check": "tsc --noEmit && npx prettier \"quartz/config/**/*.ts\" \"quartz/components/**/*.{ts,tsx,scss}\" \"quartz/styles/**/*.scss\" \"quartz/themes/everforest.ts\" \"quartz.config.ts\" \"quartz.layout.ts\" --check",
     "format": "npx prettier . --write",
     "test": "tsx ./quartz/util/path.test.ts && tsx ./quartz/depgraph.test.ts",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1"
@@ -108,6 +108,7 @@
     "@types/ws": "^8.5.14",
     "@types/yargs": "^17.0.33",
     "esbuild": "^0.25.0",
+    "playwright": "^1.59.1",
     "prettier": "^3.5.2",
     "tsx": "^4.19.3",
     "typescript": "^5.7.3"

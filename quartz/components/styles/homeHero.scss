@@ -1,0 +1,100 @@
+@use "../../styles/variables.scss" as *;
+
+.home-hero {
+  margin-top: var(--space-3);
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-sm);
+}
+
+.home-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.home-hero-eyebrow {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-hero-title {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.72rem;
+  line-height: 1.2;
+}
+
+.home-hero-description {
+  margin: 0;
+  color: var(--text-muted);
+  max-width: 56ch;
+}
+
+.home-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.home-hero-primary,
+.home-hero-secondary {
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  transition:
+    background-color 0.16s ease,
+    border-color 0.16s ease,
+    color 0.16s ease,
+    box-shadow 0.16s ease;
+
+  &:focus-visible {
+    outline: none;
+    border-color: var(--ring);
+    box-shadow: var(--ring-shadow);
+  }
+}
+
+.home-hero-primary {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-weight: 600;
+
+  &:hover {
+    background: color-mix(in srgb, var(--accent) 84%, var(--text) 16%) !important;
+    color: var(--accent-contrast) !important;
+  }
+}
+
+.home-hero-secondary {
+  background: color-mix(in srgb, var(--bg-elevated) 82%, var(--bg) 18%);
+  border-color: var(--border);
+  color: var(--text);
+
+  &:hover {
+    border-color: var(--border-strong);
+    background: var(--surface-hover);
+    color: var(--text) !important;
+  }
+}
+
+@media all and ($mobile) {
+  .home-hero {
+    margin-top: var(--space-2);
+    padding: var(--space-3);
+  }
+
+  .home-hero-title {
+    font-size: 1.3rem;
+  }
+
+  .home-hero-actions {
+    gap: var(--space-2);
+  }
+}

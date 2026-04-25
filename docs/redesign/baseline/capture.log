@@ -1,0 +1,170 @@
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm.
+
+> @jackyzha0/quartz@4.4.0 quartz
+> ./quartz/bootstrap-cli.mjs build --serve
+
+
+ Quartz v4.4.0 
+
+(node:55260) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Cleaned output directory `public` in 13ms
+Found 128 input files from `content` in 9ms
+[2K[1GParsed 128 Markdown files in 900ms
+Filtered out 27 files in 172μs
+[2K[1GEmitted 186 files to `public` in 315ms
+Done processing 128 files in 1s
+Started a Quartz server listening at http://localhost:8080
+hint: exit with ctrl+c
+[200] /
+[200] /
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /static/icon.png
+[302] /tags -> /tags/
+[200] /tags/
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /tags/
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /static/icon.png
+[302] /wishlist -> /wishlist/
+[200] /wishlist/
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /wishlist/
+[200] /static/contentIndex.json
+[200] /static/icon.png
+[200] /MermaidJS
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /MermaidJS
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /static/icon.png
+[200] /
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /static/icon.png
+[200] /MermaidJS
+[200] /
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /
+[200] /static/icon.png
+[302] /tags -> /tags/
+[200] /tags/
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /tags/
+[200] /static/icon.png
+[302] /wishlist -> /wishlist/
+[200] /wishlist/
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /wishlist/
+[200] /static/icon.png
+[200] /MermaidJS
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /MermaidJS
+[200] /static/icon.png
+[200] /
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /
+[200] /static/icon.png
+[200] /MermaidJS
+[200] /
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /static/icon.png
+[302] /tags -> /tags/
+[200] /tags/
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /tags/
+[200] /static/icon.png
+[302] /wishlist -> /wishlist/
+[200] /wishlist/
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /wishlist/
+[200] /static/icon.png
+[200] /MermaidJS
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /MermaidJS
+[200] /
+[200] /
+[200] /static/icon.png
+[200] /MermaidJS
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /
+[302] /tags -> /tags/
+[200] /tags/
+[200] /tags/
+[200] /static/icon.png
+[302] /wishlist -> /wishlist/
+[200] /wishlist/
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /wishlist/
+[200] /MermaidJS
+[200] /MermaidJS
+[200] /static/icon.png
+[200] /
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+[200] /
+[200] /MermaidJS

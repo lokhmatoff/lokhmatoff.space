@@ -9,11 +9,11 @@
   transition: max-height 0.3s ease;
   box-sizing: border-box;
 
-  &>.callout-content {
+  & > .callout-content {
     padding: 0 1rem;
   }
 
-  &>.callout-title {
+  & > .callout-title {
     padding: 1rem;
     background-color: var(--bg);
     border-bottom: 1px dashed var(--border);
@@ -82,24 +82,24 @@
   // --callout-bgcolor-purple: #B48EAD22;
   // --callout-bgcolor-quote: #81A1C122;
 
-  // ---- Everforest
-  --callout-color-red: #E67E80;
-  --callout-color-orange: #E69875;
-  --callout-color-yellow: #DBBC7F;
-  --callout-color-green: #A7C080;
-  --callout-color-cyan: #83C092;
-  --callout-color-blue: #7FBBB3;
-  --callout-color-purple: #D699B6;
-  --callout-color-quote: #939F91;
+  // ---- Flexoki-adapted
+  --callout-color-red: #af3029;
+  --callout-color-orange: #bc5215;
+  --callout-color-yellow: #ad8301;
+  --callout-color-green: #66800b;
+  --callout-color-cyan: #24837b;
+  --callout-color-blue: #205ea6;
+  --callout-color-purple: #5e409d;
+  --callout-color-quote: #6f6e69;
 
-  --callout-bgcolor-red: #E67E8022;
-  --callout-bgcolor-orange: #E6987522;
-  --callout-bgcolor-yellow: #DBBC7F22;
-  --callout-bgcolor-green: #A7C08022;
-  --callout-bgcolor-cyan: #83C09222;
-  --callout-bgcolor-blue: #7FBBB322;
-  --callout-bgcolor-purple: #D699B622;
-  --callout-bgcolor-quote: #939F9122;
+  --callout-bgcolor-red: #af302926;
+  --callout-bgcolor-orange: #bc521526;
+  --callout-bgcolor-yellow: #ad830126;
+  --callout-bgcolor-green: #66800b26;
+  --callout-bgcolor-cyan: #24837b26;
+  --callout-bgcolor-blue: #205ea626;
+  --callout-bgcolor-purple: #5e409d26;
+  --callout-bgcolor-quote: #6f6e6926;
 
   // ---- Gruvbox
   // --callout-color-red: #CC241D;
@@ -229,7 +229,7 @@
     --callout-icon: var(--callout-icon-quote);
   }
 
-  &.is-collapsed>.callout-title>.fold-callout-icon {
+  &.is-collapsed > .callout-title > .fold-callout-icon {
     transform: rotateZ(-90deg);
   }
 }
@@ -250,7 +250,7 @@
     --callout-icon: var(--callout-icon-fold);
   }
 
-  &>.callout-title-inner>p {
+  & > .callout-title-inner > p {
     color: var(--color);
     margin: 0;
   }

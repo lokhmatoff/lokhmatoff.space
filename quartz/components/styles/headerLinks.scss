@@ -1,20 +1,45 @@
 @use "../../styles/variables.scss" as *;
 
 .header-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 0.75rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--space-2);
 
-    & li {
-        font-size: 1rem;
-        line-height: 1.5;
-        font-weight: 600;
-    }
+  & li {
+    font-size: 0.92rem;
+    line-height: 1.5;
+    font-weight: 600;
+  }
 
-    @media all and ($mobile) {
-        display: none;
-    }
+  & a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.85rem;
+    padding: 0 var(--space-2);
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    color: var(--text);
+    transition:
+      border-color 0.2s ease,
+      background-color 0.2s ease;
+  }
+
+  & a:hover {
+    background: var(--surface-hover-strong);
+    border-color: var(--border);
+  }
+
+  & a:focus-visible {
+    background: var(--surface-hover-strong);
+    border-color: var(--ring);
+    box-shadow: var(--ring-shadow);
+    outline: none;
+  }
+
+  @media all and ($mobile) {
+    display: none;
+  }
 }
