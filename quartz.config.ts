@@ -28,11 +28,9 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        // header: "Inter Tight",
-        // body: "Inter Tight",
-        header: "Manrope",
-        body: "Manrope",
-        code: "JetBrains Mono",
+        header: "Geist",
+        body: "Geist",
+        code: "Geist Mono",
       },
       colors: colors,
     },
@@ -44,40 +42,20 @@ const config: QuartzConfig = {
         priority: ["frontmatter", "filesystem"],
       }),
       Plugin.SyntaxHighlighting({
-        // Default syntax theme
-        // theme: {
-        //   light: "vitesse-light",
-        //   dark: "vitesse-dark",
-        // },
-        // keepBackground: false,
-        // Dracula syntax theme
-        // theme: {
-        //   light: "dracula",
-        //   dark: "dracula",
-        // },
-        // keepBackground: true,
-        // Nord syntax theme
-        // theme: {
-        //   light: "nord",
-        //   dark: "nord",
-        // },
-        // keepBackground: true,
         theme: {
-          light: "github-light",
-          dark: "github-dark",
+          light: "vitesse-light",
+          dark: "vitesse-dark",
         },
         keepBackground: false,
-        // Gruvbox syntax theme
-        // theme: {
-        //   light: "everforest-light",
-        //   dark: "everforest-dark",
-        // },
-        // keepBackground: false,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
-      Plugin.CrawlLinks({ markdownLinkResolution: "shortest", externalLinkIcon: true, openLinksInNewTab: true }),
+      Plugin.CrawlLinks({
+        markdownLinkResolution: "shortest",
+        externalLinkIcon: true,
+        openLinksInNewTab: true,
+      }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],

@@ -14,8 +14,8 @@
     border-radius: var(--radius-md);
     font-family: inherit;
     font-size: inherit;
-    height: 2.5rem;
-    padding: 0 var(--space-2) 0 var(--space-3);
+    height: 2.25rem;
+    padding: 0 var(--space-2);
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -33,6 +33,7 @@
       display: inline;
       padding: 0;
       font-weight: 600;
+      font-size: 0.9rem;
       color: var(--text-muted);
     }
 
@@ -99,10 +100,10 @@
 
       & > input {
         box-sizing: border-box;
-        padding: 0.5em 1em;
+        padding: 0.45em 0.85em;
         font-family: var(--bodyFont);
         color: var(--dark);
-        font-size: 1.1em;
+        font-size: 1em;
         border: 1px solid var(--border);
 
         &:focus {

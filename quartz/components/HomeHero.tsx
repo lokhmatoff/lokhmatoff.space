@@ -1,34 +1,10 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 import style from "./styles/homeHero.scss"
+import { homeHeroConfig, type HomeHeroConfig } from "../config/homeHero"
 
-type HeroAction = {
-  label: string
-  href: string
-}
-
-interface HomeHeroOptions {
-  title: string
-  description: string
-  primaryCta: HeroAction
-  secondaryCta?: HeroAction
-}
-
-const defaultOptions: HomeHeroOptions = {
-  title: "Lokhmatoff Space",
-  description: "Персональное пространство с заметками, идеями и проектами.",
-  primaryCta: {
-    label: "Читать заметки",
-    href: "/",
-  },
-  secondaryCta: {
-    label: "Обо мне",
-    href: "/about",
-  },
-}
-
-export default ((opts?: Partial<HomeHeroOptions>) => {
-  const options: HomeHeroOptions = { ...defaultOptions, ...opts }
+export default ((opts?: Partial<HomeHeroConfig>) => {
+  const options: HomeHeroConfig = { ...homeHeroConfig, ...opts }
 
   const HomeHero: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
     if (fileData.slug !== "index") {
@@ -38,7 +14,7 @@ export default ((opts?: Partial<HomeHeroOptions>) => {
     return (
       <section class={classNames(displayClass, "home-hero")} aria-label="Homepage hero">
         <div class="home-hero-content">
-          <p class="home-hero-eyebrow">Lokhmatoff Space</p>
+          <p class="home-hero-eyebrow">{options.eyebrow}</p>
           <h1 class="home-hero-title">{options.title}</h1>
           <p class="home-hero-description">{options.description}</p>
           <div class="home-hero-actions">

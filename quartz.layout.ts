@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { homeHeroConfig } from "./quartz/config/homeHero"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -7,13 +8,15 @@ export const sharedPageComponents: SharedLayout = {
   header: [
     Component.PageTitle(),
     Component.Search(),
-    Component.DesktopOnly(Component.HeaderLinks({
-      links: {
-        "Обо мне": "/about",
-        "Проекты": "/projects",
-        // "Сейчас": "/now",
-      }
-    })),
+    Component.DesktopOnly(
+      Component.HeaderLinks({
+        links: {
+          "Обо мне": "/about",
+          Проекты: "/projects",
+          // "Сейчас": "/now",
+        },
+      }),
+    ),
     Component.Darkmode(),
   ],
   afterBody: [
@@ -26,7 +29,7 @@ export const sharedPageComponents: SharedLayout = {
         repelForce: 5,
         centerForce: 1,
         linkDistance: 50,
-      }
+      },
     }),
     Component.RecentNotes({ limit: 5 }),
   ],
@@ -41,22 +44,11 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
-    Component.HomeHero({
-      title: "Lokhmatoff Space",
-      description: "Персональное пространство с заметками, интересными задачами и проектами.",
-      primaryCta: {
-        label: "Читать заметки",
-        href: "/tags",
-      },
-      secondaryCta: {
-        label: "Обо мне",
-        href: "/about",
-      },
-    }),
+    Component.HomeHero(homeHeroConfig),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
-    Component.TableOfContents()
+    Component.TableOfContents(),
   ],
   left: [],
   right: [],

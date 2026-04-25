@@ -2,7 +2,7 @@
 
 ul.section-ul {
   list-style: none;
-  margin-top: 2em;
+  margin-top: 1.5em;
   padding-left: 0;
   display: grid;
   gap: var(--space-3);
@@ -16,7 +16,7 @@ li.section-li {
     grid-template-columns: fit-content(8em) 3fr 1fr;
     gap: var(--space-3);
     align-items: center;
-    padding: var(--space-3) var(--space-4);
+    padding: var(--space-2) var(--space-3);
     background: var(--bg-elevated);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
