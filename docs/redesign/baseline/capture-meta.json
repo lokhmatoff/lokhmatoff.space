@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-25T17:16:24.755Z",
+  "generatedAt": "2026-04-25T18:30:13.237Z",
   "baseUrl": "http://127.0.0.1:8080",
   "pages": [
     {
@@ -17,6 +17,11 @@
     {
       "key": "article",
       "route": "/MermaidJS"
+    },
+    {
+      "key": "search-overlay",
+      "route": "/",
+      "mode": "search-overlay"
     }
   ],
   "viewports": {

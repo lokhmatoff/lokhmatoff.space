@@ -62,12 +62,11 @@ const config: QuartzConfig = {
         //   dark: "nord",
         // },
         // keepBackground: true,
-        // Everforest syntax theme
         theme: {
-          light: "everforest-light",
-          dark: "everforest-dark",
+          light: "github-light",
+          dark: "github-dark",
         },
-        keepBackground: true,
+        keepBackground: false,
         // Gruvbox syntax theme
         // theme: {
         //   light: "everforest-light",

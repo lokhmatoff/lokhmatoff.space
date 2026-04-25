@@ -13,6 +13,7 @@ const pages = [
   { key: "tags", route: "/tags" },
   { key: "wishlist", route: "/wishlist" },
   { key: "article", route: "/MermaidJS" },
+  { key: "search-overlay", route: "/", mode: "search-overlay" },
 ]
 
 const viewports = {
@@ -71,6 +72,18 @@ async function setTheme(page, theme) {
   }, theme)
 }
 
+async function openSearchOverlay(page) {
+  const searchButton = page.locator("#search-button")
+  const searchContainer = page.locator("#search-container")
+  const searchBar = page.locator("#search-bar")
+  const searchLayout = page.locator("#search-layout")
+
+  await searchButton.click()
+  await searchContainer.waitFor({ state: "visible", timeout: 10000 })
+  await searchBar.fill("mermaid")
+  await searchLayout.waitFor({ state: "visible", timeout: 10000 })
+}
+
 async function captureAll() {
   await ensureDirs()
 
@@ -87,9 +100,13 @@ async function captureAll() {
         await page.setViewportSize(viewport)
 
         for (const pageMeta of pages) {
-          await page.goto(`${baseUrl}${pageMeta.route}`, { waitUntil: "networkidle" })
+          await page.goto(`${baseUrl}${pageMeta.route}`, { waitUntil: "domcontentloaded", timeout: 60000 })
           await setTheme(page, theme)
-          await page.reload({ waitUntil: "networkidle" })
+          await page.reload({ waitUntil: "domcontentloaded", timeout: 60000 })
+          await wait(1000)
+          if (pageMeta.mode === "search-overlay") {
+            await openSearchOverlay(page)
+          }
 
           const outPath = path.join(outRoot, theme, viewportName, `${pageMeta.key}.png`)
           await page.screenshot({ path: outPath, fullPage: true })
@@ -102,7 +119,7 @@ async function captureAll() {
 }
 
 async function run() {
-  const serve = spawn("npx", ["quartz", "build", "--serve"], {
+  const serve = spawn("npm", ["run", "quartz", "--", "build", "--serve"], {
     cwd: repoRoot,
     stdio: "pipe",
     env: process.env,

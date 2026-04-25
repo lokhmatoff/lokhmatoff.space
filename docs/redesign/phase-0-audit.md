@@ -11,7 +11,7 @@ This document captures the visual baseline before redesign phases start.
 | `quartz/styles/custom.scss` | Global custom override entry point; currently empty besides `@use "./base.scss"`. | high |
 | `quartz/styles/base.scss` | Global base styles for typography, spacing rhythm, links, code blocks, surfaces, focus/hover-like behavior. | high |
 | `quartz/styles/variables.scss` | Breakpoints, grid templates, spacing and weight constants used across component styles. | high |
-| `quartz/layout.ts` | Declares composition of key surfaces (header/search/darkmode, recent notes, footer, tag/meta blocks). | high |
+| `quartz.layout.ts` | Declares composition of key surfaces (header/search/darkmode, recent notes, footer, tag/meta blocks). | high |
 
 ## First-Wave Components (Surface System Input)
 
@@ -42,6 +42,7 @@ These are not first-wave primaries but can override or visually conflict with to
   - Tags index: `/tags`
   - List/index-like page: `/wishlist`
   - Typical content page: `/MermaidJS`
+  - Search overlay state: `/` with opened search modal
 - Viewports:
   - Desktop: `1440x900`
   - Mobile: `390x844`
@@ -59,16 +60,16 @@ Expected output folder:
 ## Baseline Capture Result
 
 - Capture status: completed.
-- Captured at (UTC): `2026-04-25T17:15:33.174Z`.
+- Captured at (UTC): `2026-04-25T18:30:13.237Z`.
 - Metadata file: `docs/redesign/baseline/capture-meta.json`.
 - Raw server/capture log: `docs/redesign/baseline/capture.log`.
 
 Generated files:
 
-- `docs/redesign/baseline/light/desktop/{home,tags,wishlist,article}.png`
-- `docs/redesign/baseline/light/mobile/{home,tags,wishlist,article}.png`
-- `docs/redesign/baseline/dark/desktop/{home,tags,wishlist,article}.png`
-- `docs/redesign/baseline/dark/mobile/{home,tags,wishlist,article}.png`
+- `docs/redesign/baseline/light/desktop/{home,tags,wishlist,article,search-overlay}.png`
+- `docs/redesign/baseline/light/mobile/{home,tags,wishlist,article,search-overlay}.png`
+- `docs/redesign/baseline/dark/desktop/{home,tags,wishlist,article,search-overlay}.png`
+- `docs/redesign/baseline/dark/mobile/{home,tags,wishlist,article,search-overlay}.png`
 
 ## Risks Before Phase 1
 

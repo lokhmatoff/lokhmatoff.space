@@ -15,9 +15,9 @@ body,
 section {
   margin: 0;
   box-sizing: border-box;
-  background-color: var(--light);
+  background-color: var(--bg);
   font-family: var(--bodyFont);
-  color: var(--darkgray);
+  color: var(--text-muted);
 }
 
 .text-highlight {
@@ -26,8 +26,8 @@ section {
   border-radius: 5px;
 }
 ::selection {
-  background: color-mix(in srgb, var(--tertiary) 60%, rgba(255, 255, 255, 0));
-  color: var(--darkgray);
+  background: color-mix(in srgb, var(--accent) 18%, rgba(255, 255, 255, 0));
+  color: var(--text);
 }
 
 p,
@@ -73,17 +73,18 @@ a {
   font-weight: $semiBoldWeight;
   text-decoration: none;
   transition: color 0.2s ease;
-  color: var(--secondary);
+  color: var(--accent);
 
   &:hover {
-    color: var(--tertiary) !important;
+    color: color-mix(in srgb, var(--accent) 70%, var(--text) 30%) !important;
   }
 
   &.internal {
     text-decoration: none;
-    background-color: var(--highlight);
+    background-color: var(--bg-elevated);
     padding: 0 0.1rem;
-    border-radius: 5px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
     line-height: 1.4rem;
 
     &:has(> img) {
@@ -126,6 +127,10 @@ a {
   // max-width: calc(#{map.get($breakpoints, desktop)} + 300px);
   max-width: #{map.get($breakpoints, desktop)};
   margin: 0 auto;
+  padding: 0 var(--space-5) var(--space-6);
+  @media all and ($mobile) {
+    padding: 0 var(--space-4) var(--space-5);
+  }
   & article {
     & > h1 {
       font-size: 2rem;
@@ -176,7 +181,7 @@ a {
     }
 
     @media all and not ($desktop) {
-      padding: 0 1rem;
+      padding: 0;
     }
     @media all and ($mobile) {
       margin: 0 auto;
@@ -233,20 +238,21 @@ a {
     }
     & .page-header,
     & .page-footer {
-      margin-top: 1rem;
+      margin-top: var(--space-5);
     }
 
     & .page-header {
       grid-area: grid-header;
-      margin: $topSpacing 0 0 0;
+      margin: $topSpacing 0 0;
       @media all and ($mobile) {
-        margin-top: 0;
+        margin-top: var(--space-5);
         padding: 0;
       }
     }
 
     & .center > article {
       grid-area: grid-center;
+      margin-top: 0;
     }
 
     & footer {
@@ -267,23 +273,35 @@ a {
         margin-left: 0;
       }
     }
+    & .center {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+      @media all and ($mobile) {
+        gap: var(--space-4);
+      }
+    }
+    & .page-footer {
+      margin-top: var(--space-4);
+    }
     & footer {
       margin-left: 0;
+      margin-top: var(--space-6);
     }
   }
 }
 
 .footnotes {
   margin-top: 2rem;
-  border-top: 1px solid var(--lightgray);
+  border-top: 1px solid var(--border);
 }
 
 input[type="checkbox"] {
   transform: translateY(2px);
-  color: var(--secondary);
-  border: 1px solid var(--lightgray);
+  color: var(--accent);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background-color: var(--light);
+  background-color: var(--bg);
   position: relative;
   margin-inline-end: 0.2rem;
   margin-inline-start: -1.4rem;
@@ -292,8 +310,8 @@ input[type="checkbox"] {
   height: 16px;
 
   &:checked {
-    border-color: var(--secondary);
-    background-color: var(--secondary);
+    border-color: var(--accent);
+    background-color: var(--accent);
 
     &::after {
       content: "";
@@ -312,7 +330,7 @@ input[type="checkbox"] {
 
 blockquote {
   margin: 1rem 0;
-  border-left: 3px solid var(--secondary);
+  border-left: 3px solid var(--accent);
   padding-left: 1rem;
   transition: border-color 0.2s ease;
 }
@@ -358,28 +376,28 @@ h6 {
 // typography improvements
 h1 {
   font-size: 1.75rem;
-  margin-top: 2.25rem;
-  margin-bottom: 1rem;
+  margin-top: calc(var(--space-6) + var(--space-2));
+  margin-bottom: var(--space-4);
 }
 
 h2 {
   font-size: 1.4rem;
-  margin-top: 1.9rem;
-  margin-bottom: 1rem;
+  margin-top: calc(var(--space-5) + var(--space-2));
+  margin-bottom: var(--space-4);
 }
 
 h3 {
   font-size: 1.12rem;
-  margin-top: 1.62rem;
-  margin-bottom: 1rem;
+  margin-top: calc(var(--space-5) + var(--space-1));
+  margin-bottom: var(--space-4);
 }
 
 h4,
 h5,
 h6 {
   font-size: 1rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-4);
 }
 
 figure[data-rehype-pretty-code-figure] {
@@ -392,11 +410,11 @@ figure[data-rehype-pretty-code-figure] {
     font-family: var(--codeFont);
     font-size: 0.9rem;
     padding: 0.1rem 0.5rem;
-    border: 1px solid var(--lightgray);
+    border: 1px solid var(--border);
     width: fit-content;
     border-radius: 5px;
     margin-bottom: -0.5rem;
-    color: var(--darkgray);
+    color: var(--text-muted);
   }
 
   & > pre {
@@ -407,9 +425,9 @@ figure[data-rehype-pretty-code-figure] {
 pre {
   font-family: var(--codeFont);
   padding: 0 0.5rem;
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
   overflow-x: auto;
-  border: 1px solid var(--lightgray);
+  border: 1px solid var(--border);
   position: relative;
 
   &:has(> code.mermaid) {
@@ -438,7 +456,7 @@ pre {
 
       &[data-highlighted-line] {
         background-color: var(--highlight);
-        border-left: 3px solid var(--secondary);
+        border-left: 3px solid var(--accent);
       }
 
       &::before {
@@ -464,11 +482,12 @@ pre {
 
 code {
   font-size: 0.9em;
-  color: var(--dark);
+  color: var(--text);
   font-family: var(--codeFont);
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
   padding: 0.1rem 0.2rem;
-  background: var(--lightgray);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
 }
 
 tbody,
@@ -507,7 +526,7 @@ td {
 }
 
 tr {
-  border-bottom: 1px solid var(--lightgray);
+  border-bottom: 1px solid var(--border);
   &:last-child {
     border-bottom: none;
   }
@@ -527,10 +546,10 @@ p > img + em {
 
 hr {
   width: 100%;
-  margin: 2rem auto;
+  margin: var(--space-6) auto;
   height: 1px;
   border: none;
-  background-color: var(--lightgray);
+  background-color: var(--border);
 }
 
 audio,
@@ -600,7 +619,7 @@ iframe.pdf {
   left: 0;
   width: 0;
   height: 3px;
-  background: var(--secondary);
+  background: var(--accent);
   transition: width 0.2s ease;
   z-index: 9999;
 }
