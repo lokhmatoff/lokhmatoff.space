@@ -11,8 +11,8 @@ export const sharedPageComponents: SharedLayout = {
     Component.DesktopOnly(
       Component.HeaderLinks({
         links: {
-          "Обо мне": "/about",
-          Проекты: "/projects",
+          "/zettels": "/zettels/2604230000-Заметки",
+          "/about": "/about",
           // "Сейчас": "/now",
         },
       }),

@@ -20,7 +20,7 @@ export const homeHeroConfig: HomeHeroConfig = {
     href: "/tags",
   },
   secondaryCta: {
-    label: "Обо мне",
-    href: "/about",
+    label: "Новый Цеттелькастен",
+    href: "/zettels/2604230000-Заметки",
   },
 }
